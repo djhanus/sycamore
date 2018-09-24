@@ -1,0 +1,48 @@
+/*
+ Theme Name:   Sycamore Land Trust
+ Theme URI:    local
+ Description:  Fall 2018 Theme for Sycamore Land Trust
+ Author:       BLUELINE
+ Author URI:   https://thisisblueline.com
+ Template:     Divi
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Text Domain:  Divi-child
+*/
+:root {
+  /* Colors */
+  --color-pale-slate: #CAC9CA;
+  --color-bright-sun: #F8D048;
+  --color-downy: #5FC9A3;
+  --color-bleach-white: #FEF9D6;
+  /* Fonts */
+  --font-khand: "Khand", sans-serif;
+}
+
+/*  */
+header {
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  background: white;
+  border-bottom: 1px solid var(--color-pale-slate);
+  width: 100%;
+  height: 125px;
+  font-family: var(--font-khand);
+  color: black;
+}
+
+header .menu-header-container {
+  margin-left: auto;
+}
+
+header .menu-header-container ul li a {
+  color: black;
+}
+
+h1 {
+  color: var(--color-pale-slate);
+}
+
+/*# sourceMappingURL=main.css.map */
