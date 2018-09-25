@@ -12,11 +12,12 @@
   <?php if($the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post();
     $bb_event_time_start  = get_field('bb_event_time_start');
     $bb_event_time_end    = get_field('bb_event_time_end');
+    $bb_event_date        = get_field('bb_event_date');
   ?>
     <li>
       <date>
-        <span><?php echo date("M", strtotime($bb_event_time_start)); ?></span>
-        <span><?php echo date("d", strtotime($bb_event_time_start)); ?></span>
+        <span><?php echo date("M", strtotime($bb_event_date)); ?></span>
+        <span><?php echo date("d", strtotime($bb_event_date)); ?></span>
       </date>
       <?php the_title(); ?>
     </li>

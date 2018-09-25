@@ -1072,6 +1072,10 @@ ul {
       a {
         color: $color-thunder;
         text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
       }
 
       p {
