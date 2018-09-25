@@ -124,7 +124,7 @@
 
           <div class="text">
             <?php echo $bulletin_board_text; ?>
-            <a href="<?php echo $bulletin_board_button_url; ?>" class="btn"><?php echo $bulletin_board_button_text; ?>w</a>
+            <a href="<?php echo $bulletin_board_button_url; ?>" class="btn"><?php echo $bulletin_board_button_text; ?></a>
           </div>
 
         </div>
