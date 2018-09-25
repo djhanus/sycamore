@@ -91,7 +91,7 @@
           </div>
         </div>
       </div>
-      <a href="#" class="btn">CONNECT WITH THE PROGRAM</a>
+      <a href="mailto:shane@sycamorelandtrust.org" class="btn">CONNECT WITH THE PROGRAM</a>
 
       <div class="video-row">
         <?php echo $learnSnPVideo; ?>
