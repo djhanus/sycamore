@@ -17,7 +17,7 @@
           <p>Upcoming Events:</p>
 
           <?php include('mini-events-cal.php'); ?>
-          <a href="#" class="btn">View Full Calendar</a>
+          <a href="/bulletin-board/events-calendar/" class="btn">View Full Calendar</a>
         </div>
       </div>
 
@@ -152,19 +152,19 @@
           <p>Follow us for updates, news, events, photos, and more!</p>
           <ul>
             <li>
-              <a href="<?php echo $bb_socials_facebook_url; ?>">
+              <a href="<?php echo $bb_socials_facebook_url; ?>" target="_blank">
                 <span class="facebook"></span>
                 <span><?php echo $bb_socials_facebook; ?></span>
               </a>
             </li>
             <li>
-              <a href="<?php echo $bb_socials_instagram_url; ?>">
+              <a href="<?php echo $bb_socials_instagram_url; ?>" target="_blank">
                 <span class="instagram"></span>
                 <span><?php echo $bb_socials_instagram; ?></span>
               </a>
             </li>
             <li>
-              <a href="<?php echo $bb_socials_twitter_url; ?>">
+              <a href="<?php echo $bb_socials_twitter_url; ?>" target="_blank">
                 <span class="twitter"></span>
                 <span><?php echo $bb_socials_twitter; ?></span>
               </a>
