@@ -70,13 +70,13 @@
 
         <p>Please respect Sycamore’s neighbors and do not trespass to visit a preserve.</p>
       </div>
+
+      <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/wild-indiana.svg">
     </div>
 
     <?php include('learn-indiana-divider.php');?>
 
     <div class="row two">
-      <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/wild-indiana.svg">
-
       <h1>HOW WE PROTECT LAND</h1>
       <div class="text">
         <?php echo $exploreProtectText; ?>
