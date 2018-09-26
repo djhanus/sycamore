@@ -58,8 +58,8 @@
           </div>
 
           <div>
-            <a href="<?php echo $bb_event_facebook_event_url; ?>" class="btn">VIEW FACEBOOK</a>
-            <a href="<?php echo $bb_event_rsvp; ?>" class="btn">Read More</a>
+            <a href="<?php echo $bb_event_facebook_event_url; ?>" class="btn" target="_blank">FACEBOOK EVENT</a>
+            <a href="<?php echo $bb_event_rsvp; ?>" class="btn" target="_blank">RSVP</a>
           </div>
         </div>
       <?php endwhile; else: ?>
