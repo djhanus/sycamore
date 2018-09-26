@@ -53,7 +53,7 @@
       <div class="btns-wrapper">
         <?php if( have_rows('bb_twig_buttons') ): ?>
           <?php while( have_rows('bb_twig_buttons') ): the_row(); ?>
-            <a href="<?php the_sub_field('bb_twig_buttons_button_url'); ?>" class="btn"><?php the_sub_field('bb_twig_buttons_button_text'); ?></a>
+            <a href="<?php the_sub_field('bb_twig_buttons_button_url'); ?>" class="btn" target="_blank"><?php the_sub_field('bb_twig_buttons_button_text'); ?></a>
           <?php endwhile; ?>
         <?php endif; ?>
       </div>
