@@ -69,7 +69,7 @@
         <ul>
           <?php if( have_rows('bb_twig_pi_links') ): ?>
             <?php while( have_rows('bb_twig_pi_links') ): the_row(); ?>
-              <li><a href="<?php the_sub_field('bb_twig_pi_past_issue_url'); ?>"><?php the_sub_field('bb_twig_pi_past_issue_text'); ?></a></li>
+              <li><a href="<?php the_sub_field('bb_twig_pi_past_issue_url'); ?>" target="_blank"><?php the_sub_field('bb_twig_pi_past_issue_text'); ?></a></li>
             <?php endwhile; ?>
           <?php endif; ?>
         </ul>
