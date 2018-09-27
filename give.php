@@ -138,7 +138,7 @@
       <div class="wrapper">
         <div class="left">
           <div>
-            <h1><?php echo $give_no_heading; ?></h1>
+            <h1 id="naming"><?php echo $give_no_heading; ?></h1>
             <?php echo $give_no_text; ?>
 
             <ul>
@@ -153,7 +153,7 @@
           </div>
 
           <div>
-            <h1><?php echo $give_fi_heading; ?></h1>
+            <h1 id="financial"><?php echo $give_fi_heading; ?></h1>
             <?php echo $give_fi_text; ?>
             <a href="<?php echo $give_fi_button_url; ?>" class="btn"><?php echo $give_fi_button_text; ?></a>
           </div>
@@ -161,7 +161,7 @@
 
         <div class="right">
           <div>
-            <h1><?php echo $give_ncg_heading; ?></h1>
+            <h1 id="ncg"><?php echo $give_ncg_heading; ?></h1>
             <?php echo $give_ncg_text; ?>
             <a href="mailto:<?php echo $give_ncg_button_url; ?>?Subject=Sycamore%20Land%20Trust:%20Give%20-%20Non-Cash%20Gifts" class="btn"><?php echo $give_ncg_button_text; ?></a>
           </div>
@@ -175,7 +175,7 @@
 
         <div class="bottom">
           <div>
-            <h1><?php echo $give_pg_heading; ?></h1>
+            <h1 id="planned"><?php echo $give_pg_heading; ?></h1>
             <?php echo $give_pg_text; ?>
             <a href="<?php echo $give_pg_button_url; ?>" class="btn"><?php echo $give_pg_button_text; ?></a>
           </div>
