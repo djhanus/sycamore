@@ -10,6 +10,7 @@
           $giveHeroImageUrl                 = get_field('give_hero_image_url');
           $giveHeroBtnText                  = get_field('give_button_text');
           $giveHeroBtnUrl                   = get_field('give_button_url');
+          $give_supporters_graphic          = get_field('give_supporters_graphic');
 
           $give_membership_heading          = get_field('give_membership_heading');
           $give_membership_text             = get_field('give_membership_text');
@@ -121,7 +122,9 @@
 
   <div class="row three">
     <div class="container">
-      <div></div>
+      <div>
+        <img src="<?php echo $give_supporters_graphic; ?>">
+      </div>
 
       <div>
         <h1><?php echo $give_ss_heading; ?></h1>

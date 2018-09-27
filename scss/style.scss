@@ -1928,7 +1928,9 @@ ul {
           width: 50%;
 
           &:first-of-type {
-
+            img {
+              width: 100%;
+            }
           }
 
           &:last-of-type {
