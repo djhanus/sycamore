@@ -25,17 +25,20 @@
       <h1>Topic Selection</h1>
       <?php if($the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
         <div class="item">
-          <div>
-            <?php the_post_thumbnail('thumbnail', array( 'class' => 'featured-image' )); ?>
-          </div>
+          <?php
+            $featured_image_url = wp_get_attachment_url( get_post_thumbnail_id( get_the_ID() ) );
+           if ( ! empty( $featured_image_url ) ) { ?>
+              <div><?php the_post_thumbnail('thumbnail', array( 'class' => 'featured-image' )); ?></div><div>
+            <?php  } else {  ?>
+              <div></div><div style="width: 100%; padding: 0;">
+          <?php } ?>
 
-          <div>
             <h1><?php the_title(); ?></h1>
             <ul>
               <li><?php echo get_the_date(); ?></li>
             </ul>
 
-            <?php the_content()?>
+            <?php the_excerpt()?>
           </div>
 
           <div>
