@@ -27,11 +27,10 @@
             'post_type'       => 'post',
             'order'           => 'ASC',
             'posts_per_page'  => '1',
-            'category_name'   => 'event',
             'post_status'     => 'publish',
             'meta_query'      => array(
               array(
-                'key'       => 'bb_events_featured',
+                'key'       => 'featured_on_bulletin_board',
                 'value'     => true,
                 'compare'   => 'LIKE'
               )
@@ -42,10 +41,14 @@
 
         <h1>FEATURED</h1>
         <div>
-          <?php if($the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post();
-            $bb_events_featured_image_url = get_field('bb_events_featured_image_url');
-          ?>
-          <img src="<?php echo $bb_events_featured_image_url; ?>">
+          <?php if($the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+
+          <?php
+            $featured_image_url = wp_get_attachment_url( get_post_thumbnail_id( get_the_ID() ) );
+            if ( ! empty( $featured_image_url ) ) { ?>
+              <?php the_post_thumbnail('full', array( 'class' => 'featured-image' )); ?>
+          <?php } ?>
+
           <h1><?php the_title(); ?></h1>
           <?php the_excerpt(); ?>
 
