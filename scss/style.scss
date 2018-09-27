@@ -2384,8 +2384,13 @@ ul {
                 }
 
                 .text {
+                  width: 100%;
                   border: none;
                   padding: 0 0 0 30px;
+
+                  &.has-thumb {
+                    width: calc(100% - 200px) !important;
+                  }
 
                   h1 {
                     padding: 0;
@@ -2426,9 +2431,7 @@ ul {
             }
 
             .text {
-              &.has-thumb {
-                width: calc(100% - 200px) !important;
-              }
+              width: calc(100% - 200px);
 
               border: none;
               padding: 20px 30px;
