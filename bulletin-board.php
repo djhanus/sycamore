@@ -93,13 +93,14 @@
 
           ?>
           <div class="item">
-            <?php if ( has_post_thumbnail() ) { ?>
+            <?php
+              $featured_image_url = wp_get_attachment_url( get_post_thumbnail_id( get_the_ID() ) );
+              if ( ! empty( $featured_image_url ) ) { ?>
                 <?php the_post_thumbnail('thumbnail', array( 'class' => 'featured-image' )); ?>
+                <div class="text has-thumb">
               <?php  } else {  ?>
-                <img src="https://placeholder.pics/svg/150x150" class="featured-image">
+                <div class="text">
             <?php } ?>
-
-            <div class="text">
               <h1><?php the_title(); ?></h1>
               <?php the_excerpt()?>
               <a href="<?php echo get_permalink(); ?>">Continue reading ></a>

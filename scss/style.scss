@@ -2418,7 +2418,10 @@ ul {
             }
 
             .text {
-              width: calc(100% - 200px) !important;
+              &.has-thumb {
+                width: calc(100% - 200px) !important;
+              }
+
               border: none;
               padding: 20px 30px;
 
