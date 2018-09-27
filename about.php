@@ -58,7 +58,7 @@
 
     <div class="row two">
       <div class="container">
-        <h1><?php echo  $about_us_staff_heading; ?></h1>
+        <h1 id="staff"><?php echo  $about_us_staff_heading; ?></h1>
         <?php echo  $about_us_staff_text; ?>
 
         <div class="persons-wrapper">
@@ -75,7 +75,7 @@
       </div>
 
       <div class="container">
-        <h1><?php echo  $about_us_board_dir_heading; ?></h1>
+        <h1 id="board"><?php echo  $about_us_board_dir_heading; ?></h1>
         <?php echo  $about_us_board_dir_text; ?>
 
         <div class="persons-wrapper">
