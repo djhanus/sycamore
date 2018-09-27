@@ -15,6 +15,8 @@
         $learnOverviewSidebarBtnURL   = get_field('learn_overview_sidebar_button_url');
         $learnSnPText                 = get_field('schools_programs_text');
         $learnSnPShapeText            = get_field('schools_programs_shape_text');
+        $schools_programs_button_text = get_field('schools_programs_button_text');
+        $schools_programs_button_link = get_field('schools_programs_button_link');
         $learnSnPVideo                = get_field('learn_schools_programs_video');
         $learnFootprintsHeader        = get_field('learn_footprints_heading');
         $learnFootprintsSubtext       = get_field('learn_footprints_subtext');
@@ -91,7 +93,7 @@
           </div>
         </div>
       </div>
-      <a href="mailto:shane@sycamorelandtrust.org" class="btn">CONNECT WITH THE PROGRAM</a>
+      <a href="mailto:<?php echo $schools_programs_button_link; ?>?Subject=Sycamore%20Land%20Trust:%20Learn%20-%20Program%20Connect" class="btn"><?php echo $schools_programs_button_text; ?></a>
 
       <div class="video-row">
         <?php echo $learnSnPVideo; ?>
