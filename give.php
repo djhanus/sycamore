@@ -5,11 +5,11 @@
   </div>
 
   <?php while ( have_posts() ): the_post();
-          $giveHeroHeader       = get_field('give_hero_header_text');
-          $giveHeroSubtext      = get_field('give_hero_subtext');
-          $giveHeroImageUrl     = get_field('give_hero_image_url');
-          $giveHeroBtnText      = get_field('give_button_text');
-          $giveHeroBtnUrl       = get_field('give_button_url');
+          $giveHeroHeader                   = get_field('give_hero_header_text');
+          $giveHeroSubtext                  = get_field('give_hero_subtext');
+          $giveHeroImageUrl                 = get_field('give_hero_image_url');
+          $giveHeroBtnText                  = get_field('give_button_text');
+          $giveHeroBtnUrl                   = get_field('give_button_url');
 
           $give_membership_heading          = get_field('give_membership_heading');
           $give_membership_text             = get_field('give_membership_text');
@@ -33,6 +33,8 @@
 
           $give_no_heading                  = get_field('give_no_heading');
           $give_no_text                     = get_field('give_no_text');
+          $give_no_button_text              = get_field('give_no_button_text');
+          $give_no_button_link              = get_field('give_no_button_link');
 
           $give_ncg_heading                 = get_field('give_ncg_heading');
           $give_ncg_text                    = get_field('give_ncg_text');
@@ -144,8 +146,7 @@
                 <?php endwhile; ?>
               <?php endif; ?>
             </ul>
-
-            <a href="#" class="btn">CONTACT US</a>
+            <a href="mailto:<?php echo $give_no_button_link; ?>?Subject=Sycamore%20Land%20Trust:%20Give%20-%20Naming%20Opportunities" class="btn"><?php echo $give_no_button_text; ?></a>
           </div>
 
           <div>
@@ -159,7 +160,7 @@
           <div>
             <h1><?php echo $give_ncg_heading; ?></h1>
             <?php echo $give_ncg_text; ?>
-            <a href="<?php echo $give_ncg_button_url; ?>" class="btn"><?php echo $give_ncg_button_text; ?></a>
+            <a href="mailto:<?php echo $give_ncg_button_url; ?>?Subject=Sycamore%20Land%20Trust:%20Give%20-%20Non-Cash%20Gifts" class="btn"><?php echo $give_ncg_button_text; ?></a>
           </div>
 
           <div>
