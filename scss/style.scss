@@ -1418,6 +1418,14 @@ ul {
         }
       }
     }
+
+    &:nth-child(3) {
+      iframe {
+        border: 0;
+        width: 100%;
+        margin: 60px auto 0 auto;
+      }
+    }
   }
 }
 

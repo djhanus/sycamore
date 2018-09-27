@@ -8,6 +8,7 @@
         $explore_single_body_text     = get_field('explore_single_body_text');
         $explore_single_directions_heading        = get_field('explore_single_directions_heading');
         $explore_single_infos_featured_image        = get_field('explore_single_infos_featured_image');
+        $explore_single_location_map = get_field('explore_single_location_map');
   ?>
 
   <div class="container">
@@ -38,6 +39,10 @@
         <?php endif; ?>
       </div>
     </div>
+  </div>
+
+  <div class="container">
+    <?php echo $explore_single_location_map; ?>
   </div>
 
   <div class="container">
