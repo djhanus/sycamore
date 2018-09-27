@@ -308,15 +308,15 @@ button {
   }
 
   a {
-    color: white;
-    margin-left: auto;
-    background: $color-downy;
-    border-width: 2px;
+    color: white !important;
+    margin-left: auto !important;
+    background: $color-downy !important;
+    border-width: 2px !important;
 
     &:hover {
-      color: $color-downy;
-      background: transparent;
-      border-color: $color-downy;
+      color: $color-downy !important;
+      background: transparent !important;
+      border-color: $color-downy !important;
     }
   }
 }
