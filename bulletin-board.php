@@ -140,7 +140,7 @@
   </div>
 
   <div class="container">
-    <div>
+    <div id="socials">
       <h1>FOLLOW ALONG</h1>
 
       <div class="wrapper">
