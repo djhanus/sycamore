@@ -41,23 +41,28 @@
     </div>
   </div>
 
-  <div class="container">
-    <?php echo $explore_single_location_map; ?>
-  </div>
+  <?php if( get_field('explore_single_location_map') ): ?>
+    <div class="container">
+      <?php echo $explore_single_location_map; ?>
+    </div>
+  <?php endif; ?>
 
-  <div class="container">
-    <div class="carousel-wrap">
-      <div class="owl-carousel">
-        <?php if( have_rows('explore_single_gallery_images') ): ?>
-          <?php while( have_rows('explore_single_gallery_images') ): the_row(); ?>
-            <div class="item">
-              <img src="<?php the_sub_field('explore_single_gallery_image_url'); ?>">
-            </div>
-          <?php endwhile; ?>
-        <?php endif; ?>
+
+  <?php if( get_field('explore_single_gallery_images') ): ?>
+    <div class="container">
+      <div class="carousel-wrap">
+        <div class="owl-carousel">
+          <?php if( have_rows('explore_single_gallery_images') ): ?>
+            <?php while( have_rows('explore_single_gallery_images') ): the_row(); ?>
+              <div class="item">
+                <img src="<?php the_sub_field('explore_single_gallery_image_url'); ?>">
+              </div>
+            <?php endwhile; ?>
+          <?php endif; ?>
+        </div>
       </div>
     </div>
-  </div>
+  <?php endif; ?>
   <?php endwhile; ?>
 </div>
 <?php include('subscribe-divider.php'); ?>
