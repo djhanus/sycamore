@@ -109,6 +109,8 @@
           <?php endwhile; else: ?>
           <?php endif; wp_reset_postdata(); ?>
         </div>
+
+        <a href="<?php echo get_home_url(); ?>/bulletin-board/news/" class="btn read-more">Read More</a>
       </div>
 
       <div>
