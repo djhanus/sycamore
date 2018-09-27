@@ -179,13 +179,24 @@
         </div>
         <?php endwhile; wp_reset_postdata(); ?>
 
-        <div>
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/thumb-placeholder-350.jpg">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/thumb-placeholder-350.jpg">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/thumb-placeholder-350.jpg">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/thumb-placeholder-350.jpg">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/thumb-placeholder-350.jpg">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/thumb-placeholder-350.jpg">
+        <div class="ig-imgs-wrapper">
+          <script>
+              const url = 'https://api.instagram.com/v1/users/self/media/recent/?access_token=1153311023.d8231ad.7bf93ad7637f473fbe9434a9254edf00';
+              fetch(url)
+              .then(data => { return data.json() })
+              .then(res => {
+                imgUrls = res.data
+                let igWrapper = document.querySelector('.ig-imgs-wrapper');
+                for (var i = 0; i <= 5; i++) {
+                  var imgUrls = res.data[i];
+                  console.log(imgUrls);
+                  let imgURL = `<a href="${imgUrls.link}"><img src="${imgUrls.images.thumbnail.url}"></a>`;
+                  igWrapper.innerHTML += imgURL;
+                  console.log(imgURL);
+                }
+              })
+              .catch(err => { console.log(err) });
+            </script>
         </div>
       </div>
     </div>
