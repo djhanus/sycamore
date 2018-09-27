@@ -114,9 +114,9 @@
       </div>
     </div>
 
-    <div class="container" id="monarch">
+    <div class="container">
       <div>
-        <img src="<?php echo $learnMEEEImgURL; ?>">
+        <img id="monarch" src="<?php echo $learnMEEEImgURL; ?>">
       </div>
       <div>
         <h1><?php echo $learnMEEEHeading; ?></h1>
@@ -154,8 +154,8 @@
         </div>
       </div>
 
-      <div id="resources">
-        <h1>EDUCATOR AND FAMILY RESOURCE LINKS</h1>
+      <div>
+        <h1 id="resources">EDUCATOR AND FAMILY RESOURCE LINKS</h1>
         <ul>
           <?php if( have_rows('learn_frl_links') ): while ( have_rows('learn_frl_links') ) : the_row(); ?>
           <li><a href="<?php the_sub_field('learn_frl_link_url'); ?>" target="_blank"><?php the_sub_field('learn_frl_link_text'); ?></a></li>
