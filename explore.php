@@ -47,7 +47,7 @@
       </div>
     </div>
 
-    <div class="row one">
+    <div class="row one" id="directory">
       <h1>DIRECTORY</h1>
 
       <div class="directory-wrapper">
