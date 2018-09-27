@@ -1,10 +1,21 @@
 <?php
   $args = array(
     'post_type'       => 'post',
-    'order'           => 'ASC',
     'posts_per_page'  => '3',
     'category_name'   => 'event',
-    'post_status'     => 'publish'
+    'post_status'     => 'publish',
+    'orderby'         => 'meta_value_num',
+    'order'           => 'ASC',
+    'meta_key'        => 'bb_event_date',
+    'meta_query'  => array(
+      'relation'    => 'OR',
+      array(
+        'key'     => 'bb_event_date',
+        'value'   => date("Ymd"),
+        'compare' => '>='
+      )
+    )
+
   );
   $the_query            = new WP_Query( $args );
 ?>
