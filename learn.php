@@ -42,7 +42,7 @@
   </div>
 
   <div class="row one">
-    <div class="container">
+    <div class="container" id="overview">
       <h1>OVERVIEW</h1>
       <div class="text">
         <div>
@@ -62,7 +62,7 @@
     <div class="container">
       <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/kids-learning.jpg');">
 
-      <h1>SCHOOLS AND PROGRAMS</h1>
+      <h1 id="programs">SCHOOLS AND PROGRAMS</h1>
       <div class="text">
         <div>
           <?php echo $learnSnPText; ?>
@@ -114,7 +114,7 @@
       </div>
     </div>
 
-    <div class="container">
+    <div class="container" id="monarch">
       <div>
         <img src="<?php echo $learnMEEEImgURL; ?>">
       </div>
@@ -126,7 +126,7 @@
 
     <div class="container">
       <div>
-        <h1>SYCAMORE INSIGHTS</h1>
+        <h1 id="insights">SYCAMORE INSIGHTS</h1>
         <div class="items-wrapper">
           <?php
             $args = array(
@@ -154,7 +154,7 @@
         </div>
       </div>
 
-      <div>
+      <div id="resources">
         <h1>EDUCATOR AND FAMILY RESOURCE LINKS</h1>
         <ul>
           <?php if( have_rows('learn_frl_links') ): while ( have_rows('learn_frl_links') ) : the_row(); ?>
