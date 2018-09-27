@@ -3931,6 +3931,10 @@ ul {
         }
       }
     }
+
+    &:nth-child(3) {
+      margin: 0 auto 60px auto;
+    }
   }
 } // END .donate
 

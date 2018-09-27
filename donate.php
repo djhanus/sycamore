@@ -9,7 +9,7 @@
         $donate_heading_two     = get_field('donate_heading_two');
         $donate_heading_three   = get_field('donate_heading_three');
         $donate_text            = get_field('donate_text');
-
+        $donate_form            = get_field('donate_form');
   ?>
 
   <div class="container">
@@ -30,10 +30,12 @@
         <?php endif; ?>
       </div>
     </div>
+
     <div>
       <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/bird-donate.jpg">
     </div>
   </div>
+  <div class="container"><?php echo $donate_form; ?></div>
   <?php endwhile; ?>
 </div>
 <?php include('subscribe-divider.php'); ?>
