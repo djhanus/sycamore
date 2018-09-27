@@ -23,8 +23,13 @@
         <h1><?php the_title(); ?></h1>
       <?php else: endif; ?>
 
-      <h4><?php if( get_field('bb_news_single_hero_subheading') ): echo $bb_news_single_hero_subheading; endif; ?></h4>
-      <h4><?php if( get_field('bb_news_single_hero_text') ): echo $bb_news_single_hero_text; endif; ?></h4>
+      <?php if( get_field('bb_news_single_hero_subheading') ): ?>
+        <h4><?php echo $bb_news_single_hero_subheading; ?></h4>
+      <?php endif; ?>
+
+      <?php if( get_field('bb_news_single_hero_text') ): ?>
+        <h4><?php echo $bb_news_single_hero_text; ?></h4>
+      <?php endif; ?>
       </div>
 
       <?php if( have_rows('bb_news_text_sections') ): ?>
