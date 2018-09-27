@@ -12,6 +12,7 @@
         $contact_fax                        = get_field('contact_fax');
         $contact_mailing_address            = get_field('contact_mailing_address');
         $contact_office_address             = get_field('contact_office_address');
+        $contact_form             = get_field('contact_form');
   ?>
 
   <div class="container">
@@ -32,6 +33,10 @@
       <p>Office address (use PO box for mail):<br>
       <?php echo $contact_office_address; ?></p>
     </div>
+  </div>
+
+  <div class="container">
+    <?php echo $contact_form; ?></p>
   </div>
   <?php endwhile; ?>
 </div>
