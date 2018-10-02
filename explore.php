@@ -4,19 +4,21 @@
     <?php breadcrumbs(); ?>
 
     <?php while ( have_posts() ): the_post();
-          $exploreHeroHeader       = get_field('explore_hero_header_text');
-          $exploreHeroSubtext      = get_field('explore_hero_subtext');
-          $exploreHeroImageURL     = get_field('explore_hero_image_url');
+          $exploreHeroHeader         = get_field('explore_hero_header_text');
+          $exploreHeroSubtext        = get_field('explore_hero_subtext');
+          $exploreHeroImageURL       = get_field('explore_hero_image_url');
+          $explore_hero_button_text  = get_field('explore_hero_button_text');
+          $explore_hero_button_url   = get_field('explore_hero_button_url');
 
-          $exploreProtectText      = get_field('explore_protect_land_text');
+          $exploreProtectText        = get_field('explore_protect_land_text');
 
-          $exploreUpcomingText     = get_field('explore_upcoming_events_text');
-          $exploreUpcomingBtnText  = get_field('explore_upcoming_events_button_text');
-          $exploreUpcomingBtnURL   = get_field('explore_upcoming_events_button_url');
+          $exploreUpcomingText       = get_field('explore_upcoming_events_text');
+          $exploreUpcomingBtnText    = get_field('explore_upcoming_events_button_text');
+          $exploreUpcomingBtnURL     = get_field('explore_upcoming_events_button_url');
 
-          $exploreVolOppsText     = get_field('explore_vol_opp_text');
-          $exploreVolOppsBtnText  = get_field('explore_vol_opp_button_text');
-          $exploreVolOppsBtnURL   = get_field('explore_vol_opp_button_url');
+          $exploreVolOppsText        = get_field('explore_vol_opp_text');
+          $exploreVolOppsBtnText     = get_field('explore_vol_opp_button_text');
+          $exploreVolOppsBtnURL      = get_field('explore_vol_opp_button_url');
     ?>
 
     <div class="hero-wrapper">
@@ -24,6 +26,7 @@
         <div>
           <h1><?php echo $exploreHeroHeader; ?></h1>
           <?php echo $exploreHeroSubtext; ?>
+          <a href="<?php echo $explore_hero_button_url ?>" class="btn"><?php echo $explore_hero_button_text ?></a>
         </div>
 
         <div style="background: url('<?php echo $exploreHeroImageURL; ?>');">
