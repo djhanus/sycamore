@@ -96,7 +96,7 @@
     <div class="container">
       <div>
         <h2><?php echo $rowSixHeaderH1;?></h2>
-        <p><?php echo $rowSixSubtext;?>.</p>
+        <p><?php echo $rowSixSubtext;?></p>
         <a href="<?php echo $rowSixURLLink;?>" class="btn"><?php echo $rowSixLinkText;?></a>
       </div>
     </div>
