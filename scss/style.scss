@@ -3312,7 +3312,7 @@ ul {
         }
 
         .person {
-          flex: 0 1 20%;
+          flex: 0 1 calc(25% - 20px);
           margin: 0 0 20px 0;
         }
       }
