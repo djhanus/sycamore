@@ -17,7 +17,7 @@
 
     <h1>Events Calendar</h1>
 
-    <p>Copy here that Abby will send for intro text.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullam</p>
+    <p><!-- Intro Copy Goes Here --></p>
 
     <!-- <select>
       <option value="volvo">Volvo</option>
