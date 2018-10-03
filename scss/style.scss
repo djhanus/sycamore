@@ -1719,6 +1719,20 @@ ul {
             color: $color-downy;
           }
 
+          p {
+            margin: 0 0 10px 0;
+          }
+
+          a {
+            color: $color-thunder;
+            text-decoration: none;
+
+            &:hover {
+              color: $color-downy;
+              text-decoration: underline;
+            }
+          }
+
           &:first-of-type {
             display: grid;
             width: 45%;
@@ -4888,8 +4902,6 @@ footer {
 
         &:nth-child(2) {
           margin: 60px auto;
-
-
 
           div {
             &:first-of-type {
