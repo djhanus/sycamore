@@ -4076,8 +4076,20 @@ ul {
         margin: 60px 0;
       }
 
+
+
       p {
         text-align: center;
+
+        a {
+          color: $color-thunder;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+            color: $color-downy;
+          }
+        }
       }
 
       div {
