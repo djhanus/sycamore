@@ -26,7 +26,8 @@
         <div>
           <h1><?php echo $exploreHeroHeader; ?></h1>
           <?php echo $exploreHeroSubtext; ?>
-          <a href="<?php echo $explore_hero_button_url ?>" class="btn"><?php echo $explore_hero_button_text ?></a>
+          <a href="<?php echo $explore_hero_button_url ?>" target="_blank" class="btn"><?php echo $explore_hero_button_text ?></a>
+          <p><a href="mailto:info@sycamorelandtrust.org">Request a printed booklet</a></p>
         </div>
 
         <div style="background: url('<?php echo $exploreHeroImageURL; ?>');">

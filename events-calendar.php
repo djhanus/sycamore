@@ -17,7 +17,7 @@
 
     <h1>Events Calendar</h1>
 
-    <p>Copy here that Abby will send for intro text.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullam</p>
+    <p>Sycamore hosts outdoor events at our nature preserves across southern Indiana, and we’d love to see you. Members receive free admission; suggested donation for non-members is $5 per person or $10 per family. To become a member, click here.</p>
 
     <!-- <select>
       <option value="volvo">Volvo</option>
