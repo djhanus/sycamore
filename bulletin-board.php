@@ -189,10 +189,8 @@
                 let igWrapper = document.querySelector('.ig-imgs-wrapper');
                 for (var i = 0; i <= 5; i++) {
                   var imgUrls = res.data[i];
-                  console.log(imgUrls);
-                  let imgURL = `<a href="${imgUrls.link}"><img src="${imgUrls.images.thumbnail.url}"></a>`;
+                  let imgURL = `<a href="${imgUrls.link}"><img src="${imgUrls.images.low_resolution.url}"></a>`;
                   igWrapper.innerHTML += imgURL;
-                  console.log(imgURL);
                 }
               })
               .catch(err => { console.log(err) });

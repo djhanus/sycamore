@@ -2607,16 +2607,27 @@ ul {
                 padding: 130px 30px;
                 width: 65%;
 
-                img,
                 a {
-                  width:  197px;
-                  height: 197px;
+                  display: inline-block;
                   margin: 0 20px 20px 0;
 
-                  &:nth-child(3),
+                  &:nth-child(4),
                   &:last-of-type {
                     margin: 0 0 20px 0;
                   }
+                }
+
+                img {
+                  min-width: 197px;
+                  min-height: 197px;
+                  max-width: 197px;
+                  max-height: 197px;
+                  object-fit: cover;
+                  overflow: hidden;
+
+
+
+
                 }
               }
             }
