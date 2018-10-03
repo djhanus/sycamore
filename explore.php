@@ -26,7 +26,7 @@
         <div>
           <h1><?php echo $exploreHeroHeader; ?></h1>
           <?php echo $exploreHeroSubtext; ?>
-          <a href="<?php echo $explore_hero_button_url ?>" class="btn"><?php echo $explore_hero_button_text ?></a>
+          <a href="mailto:<?php echo $explore_hero_button_url ?>" class="btn"><?php echo $explore_hero_button_text ?></a>
         </div>
 
         <div style="background: url('<?php echo $exploreHeroImageURL; ?>');">
