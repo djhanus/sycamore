@@ -3003,7 +3003,7 @@ ul {
 
 // News Single
 .news-single {
-  .container {
+  .container:not(:first-of-type) {
     width: 900px;
     margin: 0 auto;
 

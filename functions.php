@@ -63,14 +63,14 @@ function breadcrumbs() {
       echo '/explore';
       echo '">';
       echo 'Explore';
-      echo "</a>&nbsp;&nbsp;/&nbsp;&nbsp;</li>";
+      echo "</a></li>";
     }
     if (is_single()) {
       echo '<li>';
-      the_category( ', ' );
+      the_category( '&nbsp;&nbsp;/&nbsp;&nbsp;' );
       echo '&nbsp;&nbsp;/&nbsp;&nbsp;';
       if (is_single()) {
-        echo "</li><li>";
+        echo "<li>";
         echo ucwords(the_title());
         echo '</li>';
       }
