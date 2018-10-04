@@ -158,8 +158,15 @@ header {
   color: $color-thunder;
 
   .container {
+    position: relative;
     display: flex;
     align-items: center;
+  }
+
+  .ubermenu-main {
+    margin: 0;
+    position: absolute;
+    right: -10px;
   }
 
   img {
