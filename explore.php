@@ -10,6 +10,9 @@
           $explore_hero_button_text  = get_field('explore_hero_button_text');
           $explore_hero_button_url   = get_field('explore_hero_button_url');
 
+          $explore_hero_request_button_text  = get_field('explore_hero_request_button_text');
+          $explore_hero_request_button_url   = get_field('explore_hero_request_button_url');
+
           $exploreProtectText        = get_field('explore_protect_land_text');
 
           $exploreUpcomingText       = get_field('explore_upcoming_events_text');
@@ -27,7 +30,7 @@
           <h1><?php echo $exploreHeroHeader; ?></h1>
           <?php echo $exploreHeroSubtext; ?>
           <a href="<?php echo $explore_hero_button_url ?>" target="_blank" class="btn"><?php echo $explore_hero_button_text ?></a>
-          <p><a href="mailto:info@sycamorelandtrust.org">Request a printed booklet</a></p>
+          <a href="mailto:<?php echo $explore_hero_request_button_url ?>" target="_blank" class="btn"><?php echo $explore_hero_request_button_text ?></a>
         </div>
 
         <div style="background: url('<?php echo $exploreHeroImageURL; ?>');">
