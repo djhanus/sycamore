@@ -2845,8 +2845,6 @@ ul {
 .news {
   padding: 0 0 100px 0;
 
-  .n{}
-
   p {
     font-family: $font-source-sans;
     font-size: 20px;
@@ -2860,16 +2858,12 @@ ul {
   }
 
   a {
-    margin: 0;
-    background: transparent;
-    border-width: 2px;
-    color: white;
-    text-align: center;
+    color: $color-downy;
 
     &:hover {
       background: transparent;
-      color: $color-downy;
-      border-color: $color-downy;
+      color: $color-thunder;
+      border-color: $color-thunder;
     }
   }
 
