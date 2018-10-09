@@ -39,13 +39,13 @@
           </div>
 
           <div>
-             <h1><?php the_title(); ?></h1>
+             <h1><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h1>
 
             <?php if( get_field('bb_event_location') || get_field('bb_event_date') || get_field('bb_event_time_start') || get_field('bb_event_time_end') ): ?>
               <ul>
                 <?php if( get_field('bb_event_location') ): ?>
                   <li><span class="location"></span>
-                    <?php echo get_the_title($bb_event_location); ?>
+                    <a href="<?php echo get_the_permalink($bb_event_location); ?>"><?php echo get_the_title($bb_event_location); ?></a>
                   </li>
                 <?php endif; ?>
 

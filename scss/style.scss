@@ -2776,6 +2776,15 @@ ul {
               margin: 0;
               padding: 0;
               background: transparent;
+
+              a {
+                color: $color-thunder;
+                text-decoration: none;
+
+                &:hover {
+                  color: $color-downy;
+                }
+              }
             }
 
             ul {
@@ -2787,6 +2796,10 @@ ul {
                 line-height: 18px;
                 font-weight: 400;
                 margin: 0 0 10px 0;
+
+                a {
+                  color: $color-thunder;
+                }
 
                 span {
                   vertical-align: middle;
