@@ -84,7 +84,7 @@
         <?php
           $args = array(
             'post_type'       => 'post',
-            'order'           => 'ASC',
+            'order'           => 'DESC',
             'posts_per_page'  => '4',
             'category_name'   => 'news',
             'post_status'     => 'publish'
