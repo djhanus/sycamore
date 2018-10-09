@@ -7,7 +7,7 @@
   <?php
     $args = array(
       'post_type'       => 'post',
-      'order'           => 'ASC',
+      'order'           => 'DESC',
       'posts_per_page'  => '100',
       'category_name'   => 'news',
       'post_status'     =>  'publish'
@@ -19,7 +19,7 @@
   <div class="container">
     <h1>News</h1>
 
-    <p>Copy here that Abby will send for intro text.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullam</p>
+    <p>Check out the latest news stories and media coverage from Sycamore. For inquiries from members of the press, please contact Abby Henkel, Communications Director, at <a href="mailto:abby@sycamorelandtrust.org?Subject=SLT%20News%20Reachout" target="_top">abby@sycamorelandtrust.org</a> or 812-336-5382 ext 101.</p>
 
     <div class="results-wrapper">
       <h1>Topic Selection</h1>
