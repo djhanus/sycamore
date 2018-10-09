@@ -19,18 +19,11 @@
 
     <p>Sycamore hosts outdoor events at our nature preserves across southern Indiana, and we’d love to see you. Members receive free admission; suggested donation for non-members is $5 per person or $10 per family. To become a member, click here.</p>
 
-    <!-- <select>
-      <option value="volvo">Volvo</option>
-      <option value="saab">Saab</option>
-      <option value="mercedes">Mercedes</option>
-      <option value="audi">Audi</option>
-    </select> -->
-
     <div class="results-wrapper">
       <h1>2018</h1>
       <?php if($the_query->have_posts() ) : while ( $the_query->have_posts() ) :
         $the_query->the_post();
-        $bb_event_location               = get_field('bb_event_location');
+        $bb_event_location               = get_field('bb_event_location', false, false);
         $bb_event_date                   = get_field('bb_event_date');
         $bb_event_facebook_event_url     = get_field('bb_event_facebook_event_url');
         $bb_event_rsvp                   = get_field('bb_event_rsvp');
@@ -51,7 +44,9 @@
             <?php if( get_field('bb_event_location') || get_field('bb_event_date') || get_field('bb_event_time_start') || get_field('bb_event_time_end') ): ?>
               <ul>
                 <?php if( get_field('bb_event_location') ): ?>
-                  <li><span class="location"></span><?php echo $bb_event_location; ?></li>
+                  <li><span class="location"></span>
+                    <?php echo get_the_title($bb_event_location); ?>
+                  </li>
                 <?php endif; ?>
 
                 <?php if( get_field('bb_event_date') || get_field('bb_event_time_start') || get_field('bb_event_time_end') ): ?>
