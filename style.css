@@ -3250,7 +3250,7 @@ ul.mini-events-cal li:last-of-type {
   margin: 0;
   background: transparent;
   border-width: 2px;
-  color: white;
+  color: black;
   text-align: center;
 }
 .the-twig a:hover {
