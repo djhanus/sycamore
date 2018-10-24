@@ -56,6 +56,7 @@
             <?php while( have_rows('explore_single_gallery_images') ): the_row(); ?>
               <div class="item">
                 <img src="<?php the_sub_field('explore_single_gallery_image_url'); ?>">
+                <?php the_sub_field('explore_single_gallery_image_text'); ?>
               </div>
             <?php endwhile; ?>
           <?php endif; ?>
