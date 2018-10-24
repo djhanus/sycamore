@@ -9,11 +9,23 @@
       $args = array(
         'post_type'       => 'post',
         'order'           => 'ASC',
-        'posts_per_page'  => '100',
+        'orderby'         => 'meta_value_num',
+        'posts_per_page'  => '-1',
         'category_name'   => 'event',
-        'post_status'     => 'publish'
+        'post_status'     => 'publish',
+        'meta_key'        => 'bb_event_date',
+        'meta_query'      => array(
+          'relation'        => 'AND',
+          array(
+            'key'           => 'bb_event_date',
+            'value'         => date("Ymd"),
+            'compare'       => '>=',
+            'type'          => 'date'
+          )
+        )
       );
-      $the_query = new WP_Query( $args ); ?>
+      $the_query = new WP_Query( $args );
+    ?>
 
     <h1>Events Calendar</h1>
 
