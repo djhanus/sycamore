@@ -11,6 +11,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="<?php bloginfo('description'); ?>">
 
+    <meta property="og:url" content="https://sycamorelandtrust.org/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Sycamore Land Trust" />
+    <meta property="og:description" content="A 501(c) non-profit protecting Indiana's landscape and connecting people to nature" />
+    <meta property="og:image" content="https://sycamorelandtrust.org/wp-content/themes/sycamore/images/slt-logo-vertical-new.svg" />
+
     <?php wp_head(); ?>
   </head>
 
