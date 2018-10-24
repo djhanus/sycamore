@@ -14,7 +14,7 @@
     <meta property="og:url" content="https://sycamorelandtrust.org/" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Sycamore Land Trust" />
-    <meta property="og:description" content="A 501(c) non-profit protecting Indiana's landscape and connecting people to nature" />
+    <meta property="og:description" content="Protecting land and connecting people to nature in southern Indiana" />
     <meta property="og:image" content="https://sycamorelandtrust.org/wp-content/themes/sycamore/images/slt-logo-vertical-new.svg" />
 
     <?php wp_head(); ?>
