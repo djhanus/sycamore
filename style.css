@@ -2423,6 +2423,22 @@ ul.mini-events-cal li:last-of-type {
   width: 900px;
   margin: 0 auto;
 }
+.news-single .container:not(:first-of-type) img.alignright {
+  margin-left: 1.5em;
+  display: inline;
+  float: right;
+}
+.news-single .container:not(:first-of-type) img.alignleft {
+  margin-right: 1.5em;
+  display: inline;
+  float: left;
+}
+.news-single .container:not(:first-of-type) img.aligncenter {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  clear: both;
+}
 .news-single .container:not(:first-of-type) h1 {
   font-size: 40px;
   line-height: 45px;

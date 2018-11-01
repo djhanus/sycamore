@@ -3029,6 +3029,25 @@ ul {
     width: 900px;
     margin: 0 auto;
 
+    img.alignright {
+      margin-left: 1.5em;
+      display: inline;
+      float: right;
+    }
+
+    img.alignleft {
+      margin-right: 1.5em;
+      display: inline;
+      float: left;
+      }
+
+    img.aligncenter {
+      margin-right: auto;
+      margin-left: auto;
+      display: block;
+      clear: both;
+    }
+
     h1 {
       font-size: 40px;
       line-height: 45px;
