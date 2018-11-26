@@ -10,6 +10,7 @@
         $donate_heading_three   = get_field('donate_heading_three');
         $donate_text            = get_field('donate_text');
         $donate_form            = get_field('donate_form');
+        $donate_feature_image   = get_field('donate_feature_image');
   ?>
 
   <div class="container">
@@ -32,7 +33,7 @@
     </div>
 
     <div>
-      <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/bird-donate.jpg">
+      <img src="<?php echo $donate_feature_image; ?>">
     </div>
   </div>
   <div class="container"><?php echo $donate_form; ?></div>
