@@ -10,6 +10,8 @@
     $rowOneHeaderH3       = get_field('row_one_header_subtext');
     $rowOneURLLink        = get_field('row_one_url_link');
     $rowOneLinkText       = get_field('row_one_link_text');
+    $rowOneBGIMage        = get_field('row_one_bg_image');
+
 
     $rowTwoHeaderH1       = get_field('row_two_header_text');
     $rowTwoSubtext        = get_field('row_two_subtext');
@@ -34,7 +36,7 @@
     $rowSixLinkText       = get_field('row_six_link_text');
   ?>
 
-  <div class="row one">
+  <div class="row one" style="background: url(<?php echo $rowOneBGIMage; ?>);">
     <div class="container">
       <h1><?php echo $rowOneHeaderH1; ?></h1>
 
