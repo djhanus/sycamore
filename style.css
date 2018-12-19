@@ -2426,17 +2426,23 @@ ul.mini-events-cal li:last-of-type {
   margin-left: 1.5em;
   display: inline;
   float: right;
+  height: auto;
+  max-width: 350px;
 }
 .news-single .container:not(:first-of-type) img.alignleft {
   margin-right: 1.5em;
   display: inline;
   float: left;
+  height: auto;
+  max-width: 350px;
 }
 .news-single .container:not(:first-of-type) img.aligncenter {
   margin-right: auto;
   margin-left: auto;
   display: block;
   clear: both;
+  height: auto;
+  max-width: 550px;
 }
 .news-single .container:not(:first-of-type) h1 {
   font-size: 40px;
@@ -4670,7 +4676,7 @@ footer p {
   }
   .news-single .container:nth-child(2) img {
     width: 100% !important;
-    margin: 0 0 20px 0 !important;
+    margin: 0 0 20px 0;
   }
 
   .donate h1 {
@@ -5838,12 +5844,34 @@ footer p {
     font-size: 18px;
     line-height: 30px;
   }
+  .news-single .container:not(:first-of-type) img.alignright {
+    margin-left: 1.5em;
+    display: inline;
+    float: right;
+    height: auto;
+    max-width: 350px;
+  }
+  .news-single .container:not(:first-of-type) img.alignleft {
+    margin-right: 1.5em;
+    display: inline;
+    float: left;
+    height: auto;
+    max-width: 350px;
+  }
+  .news-single .container:not(:first-of-type) img.aligncenter {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    clear: both;
+    height: auto;
+    max-width: 550px;
+  }
   .news-single .container {
     width: 100% !important;
   }
   .news-single .container:nth-child(2) img {
     width: 100% !important;
-    margin: 0 0 20px 0 !important;
+    margin: 0 0 20px 0;
   }
 
   .donate h1 {
@@ -7018,12 +7046,33 @@ header .ubermenu-sticky-toggle-wrapper {
     font-size: 18px;
     line-height: 30px;
   }
+  .news-single .container:not(:first-of-type) img.alignright {
+    margin: 0 0 0 1.5em;
+    display: inline;
+    float: right;
+    height: auto;
+    max-width: 350px;
+  }
+  .news-single .container:not(:first-of-type) img.alignleft {
+    margin: 0 1.5em 0 0;
+    display: inline;
+    float: left;
+    height: auto;
+    max-width: 350px;
+  }
+  .news-single .container:not(:first-of-type) img.aligncenter {
+    margin: 0 auto;
+    display: block;
+    clear: both;
+    height: auto;
+    max-width: 550px;
+  }
   .news-single .container {
     width: 100% !important;
   }
   .news-single .container:nth-child(2) img {
     width: 100% !important;
-    margin: 0 0 20px 0 !important;
+    margin: 0 0 20px 0;
   }
 
   .donate h1 {
