@@ -1,5 +1,5 @@
 # Sycamore
-SLT Wordpress theme for fall 2018.
+SLT Custom WP Theme.
 
 Run locally with Apache + MySQL or MAMP.
 

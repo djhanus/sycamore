@@ -1,7 +1,7 @@
 /*!
  Theme Name:   Sycamore Land Trust
  Theme URI:    local
- Description:  Fall 2018 Theme for Sycamore Land Trust
+ Description:  Custom WP Theme
  Author:       BLUELINE
  Author URI:   https://thisisblueline.com
  Version:      1.0.0
@@ -264,7 +264,35 @@ button {
     color: $color-thunder;
     border-bottom-color: $color-bright-sun;
   }
-} // END .single-page
+
+  em { font-style: italic; }
+
+  img.alignright {
+    margin-left: 1.5em;
+    display: inline;
+    float: right;
+    height: auto;
+    max-width: 350px
+  }
+
+  img.alignleft {
+    margin-right: 1.5em;
+    display: inline;
+    float: left;
+    height: auto;
+    max-width: 350px
+    }
+
+  img.aligncenter {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    clear: both;
+    height: auto;
+    max-width: 960px;
+  }
+
+} // END
 
 // Subscribe Divider
 .subscribe-divider {
@@ -4503,6 +4531,37 @@ footer {
 
   .single-page {
     padding: 20px 20px 0 20px;
+  
+    img.alignright {
+      margin-right: auto;
+      margin-left: auto;
+      display: block;
+      clear: both;
+      float: none;
+      height: auto;
+      max-width: 280px;
+      padding-bottom: 15px;
+    }
+
+    img.alignleft {
+      margin-right: auto;
+      margin-left: auto;
+      display: block;
+      clear: both;
+      float: none;
+      height: auto;
+      max-width: 280px;
+      padding-bottom: 15px;
+      }
+
+    img.aligncenter {
+      margin-right: auto;
+      margin-left: auto;
+      display: block;
+      clear: both;
+      height: auto;
+      max-width: 280px;
+    }
   }
 
   .breadcrumbs {
@@ -6125,6 +6184,31 @@ footer {
 
   .single-page {
     padding: 20px 20px 0 20px;
+
+    img.alignright {
+      margin-left: 1.5em;
+      display: inline;
+      float: right;
+      height: auto;
+      max-width: 350px
+    }
+
+    img.alignleft {
+      margin-right: 1.5em;
+      display: inline;
+      float: left;
+      height: auto;
+      max-width: 350px
+      }
+
+    img.aligncenter {
+      margin-right: auto;
+      margin-left: auto;
+      display: block;
+      clear: both;
+      height: auto;
+      max-width: 680px;
+    }
   }
 
   .breadcrumbs {
@@ -7775,6 +7859,31 @@ footer {
 
   .single-page {
     padding: 20px 20px 0 20px;
+
+    img.alignright {
+      margin-left: 1.5em;
+      display: inline;
+      float: right;
+      height: auto;
+      max-width: 350px
+    }
+
+    img.alignleft {
+      margin-right: 1.5em;
+      display: inline;
+      float: left;
+      height: auto;
+      max-width: 350px
+      }
+
+    img.aligncenter {
+      margin-right: auto;
+      margin-left: auto;
+      display: block;
+      clear: both;
+      height: auto;
+      max-width: 680px;
+    }
   }
 
   .breadcrumbs {

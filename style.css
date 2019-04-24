@@ -1,7 +1,7 @@
 /*!
  Theme Name:   Sycamore Land Trust
  Theme URI:    local
- Description:  Fall 2018 Theme for Sycamore Land Trust
+ Description:  Custom WP Theme
  Author:       BLUELINE
  Author URI:   https://thisisblueline.com
  Version:      1.0.0
@@ -220,6 +220,31 @@ button:hover {
 .single-page h1 {
   color: #221F20;
   border-bottom-color: #F8D048;
+}
+.single-page em {
+  font-style: italic;
+}
+.single-page img.alignright {
+  margin-left: 1.5em;
+  display: inline;
+  float: right;
+  height: auto;
+  max-width: 350px;
+}
+.single-page img.alignleft {
+  margin-right: 1.5em;
+  display: inline;
+  float: left;
+  height: auto;
+  max-width: 350px;
+}
+.single-page img.aligncenter {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  clear: both;
+  height: auto;
+  max-width: 960px;
 }
 
 .subscribe-divider {
@@ -3600,6 +3625,34 @@ footer p {
   .single-page {
     padding: 20px 20px 0 20px;
   }
+  .single-page img.alignright {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    clear: both;
+    float: none;
+    height: auto;
+    max-width: 280px;
+    padding-bottom: 15px;
+  }
+  .single-page img.alignleft {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    clear: both;
+    float: none;
+    height: auto;
+    max-width: 280px;
+    padding-bottom: 15px;
+  }
+  .single-page img.aligncenter {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    clear: both;
+    height: auto;
+    max-width: 280px;
+  }
 
   .breadcrumbs {
     padding: 0;
@@ -4778,6 +4831,28 @@ footer p {
 
   .single-page {
     padding: 20px 20px 0 20px;
+  }
+  .single-page img.alignright {
+    margin-left: 1.5em;
+    display: inline;
+    float: right;
+    height: auto;
+    max-width: 350px;
+  }
+  .single-page img.alignleft {
+    margin-right: 1.5em;
+    display: inline;
+    float: left;
+    height: auto;
+    max-width: 350px;
+  }
+  .single-page img.aligncenter {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    clear: both;
+    height: auto;
+    max-width: 680px;
   }
 
   .breadcrumbs {
@@ -5979,6 +6054,28 @@ header .ubermenu-sticky-toggle-wrapper {
 
   .single-page {
     padding: 20px 20px 0 20px;
+  }
+  .single-page img.alignright {
+    margin-left: 1.5em;
+    display: inline;
+    float: right;
+    height: auto;
+    max-width: 350px;
+  }
+  .single-page img.alignleft {
+    margin-right: 1.5em;
+    display: inline;
+    float: left;
+    height: auto;
+    max-width: 350px;
+  }
+  .single-page img.aligncenter {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    clear: both;
+    height: auto;
+    max-width: 680px;
   }
 
   .breadcrumbs {
