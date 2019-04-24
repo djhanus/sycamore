@@ -442,14 +442,18 @@ ul.mini-events-cal li:last-of-type {
   display: inline-flex;
   padding: 15px 0;
   font-family: "Source Sans Pro", sans-serif;
+  list-style: none;
 }
 .breadcrumbs li {
   color: #7C7C7C;
+  font-size: 14px !important;
+  list-style: none;
   font-size: 14px;
 }
 .breadcrumbs li a {
   color: #7C7C7C;
   text-decoration: none;
+  font-size: 14px !important;
 }
 
 .hero-wrapper .hero {

@@ -521,14 +521,18 @@ ul {
   display: inline-flex;
   padding: 15px 0;
   font-family: $font-source-sans;
+  list-style: none;
 
   li {
     color: $color-boulder;
+    font-size: 14px !important;
+    list-style: none;
     font-size: 14px;
 
     a {
       color: $color-boulder;
       text-decoration: none;
+      font-size: 14px !important;
     }
   }
 } // END .breadcrumbs
