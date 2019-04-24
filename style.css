@@ -5480,8 +5480,9 @@ footer p {
     line-height: 30px;
   }
   .about-us .two .container .persons-wrapper .person {
-    flex: none;
+    flex: 0 1 calc(33% - 20px);
     width: 100%;
+    margin: 0 10px;
   }
 
   .explore-individual .container:nth-child(2) {
@@ -6704,8 +6705,9 @@ header .ubermenu-sticky-toggle-wrapper {
     line-height: 30px;
   }
   .about-us .two .container .persons-wrapper .person {
-    flex: none;
+    flex: 0 1 calc(33% - 20px);
     width: 100%;
+    margin: 0 10px;
   }
 
   .explore-individual .container:nth-child(2) {

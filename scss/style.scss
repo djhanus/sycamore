@@ -7098,8 +7098,9 @@ footer {
 
         .persons-wrapper {
           .person {
-            flex: none;
+            flex: 0 1 calc(33% - 20px);
             width: 100%;
+            margin: 0 10px;
           }
         }
       }
@@ -8774,8 +8775,9 @@ footer {
 
         .persons-wrapper {
           .person {
-            flex: none;
+            flex: 0 1 calc(33% - 20px);
             width: 100%;
+            margin: 0 10px;
           }
         }
       }
