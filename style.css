@@ -224,6 +224,24 @@ button:hover {
 .single-page em {
   font-style: italic;
 }
+.single-page ol {
+  list-style: decimal;
+  margin: 20px 20px 20px 50px;
+}
+.single-page ol li {
+  font-size: 18px;
+  padding-bottom: 15px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.single-page ul {
+  list-style: disc;
+  margin: 20px 20px 20px 50px;
+}
+.single-page ul li {
+  font-size: 18px;
+  padding-bottom: 15px;
+  font-family: "Source Sans Pro", sans-serif;
+}
 .single-page img.alignright {
   margin-left: 1.5em;
   display: inline;
