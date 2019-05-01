@@ -103,6 +103,10 @@ body {
   width: 1px;
 }
 
+ol, ul {
+  list-style: none;
+}
+
 h1 {
   text-transform: uppercase;
   font-family: "Khand", sans-serif;
@@ -234,7 +238,7 @@ button:hover {
   font-family: "Source Sans Pro", sans-serif;
 }
 .single-page ul {
-  list-style: disc;
+  list-style: none;
   margin: 20px 20px 20px 50px;
 }
 .single-page ul li {
@@ -257,6 +261,54 @@ button:hover {
   max-width: 350px;
 }
 .single-page img.aligncenter {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  clear: both;
+  height: auto;
+  max-width: 960px;
+}
+
+.standard-page h1 {
+  color: #221F20;
+  border-bottom-color: #F8D048;
+}
+.standard-page em {
+  font-style: italic;
+}
+.standard-page ol {
+  list-style: decimal;
+  margin: 20px 20px 20px 50px;
+}
+.standard-page ol li {
+  font-size: 18px;
+  padding-bottom: 15px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.standard-page ul {
+  list-style: disc;
+  margin: 20px 20px 20px 50px;
+}
+.standard-page ul li {
+  font-size: 18px;
+  padding-bottom: 15px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.standard-page img.alignright {
+  margin-left: 1.5em;
+  display: inline;
+  float: right;
+  height: auto;
+  max-width: 350px;
+}
+.standard-page img.alignleft {
+  margin-right: 1.5em;
+  display: inline;
+  float: left;
+  height: auto;
+  max-width: 350px;
+}
+.standard-page img.aligncenter {
   margin-right: auto;
   margin-left: auto;
   display: block;
@@ -2414,6 +2466,7 @@ ul.mini-events-cal li:last-of-type {
 }
 .news .container .results-wrapper .item div:nth-child(2) ul {
   margin: 5px 0 20px 0;
+  list-type: none !important;
 }
 .news .container .results-wrapper .item div:nth-child(2) ul li {
   font-family: "Source Sans Pro", sans-serif;
@@ -2421,6 +2474,7 @@ ul.mini-events-cal li:last-of-type {
   line-height: 18px;
   font-weight: 300;
   margin: 0 0 10px 0;
+  list-type: none !important;
 }
 .news .container .results-wrapper .item div:nth-child(2) p {
   text-align: left;
@@ -3676,6 +3730,38 @@ footer p {
     max-width: 280px;
   }
 
+  .standard-page {
+    padding: 20px 20px 0 20px;
+  }
+  .standard-page img.alignright {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    clear: both;
+    float: none;
+    height: auto;
+    max-width: 280px;
+    padding-bottom: 15px;
+  }
+  .standard-page img.alignleft {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    clear: both;
+    float: none;
+    height: auto;
+    max-width: 280px;
+    padding-bottom: 15px;
+  }
+  .standard-page img.aligncenter {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    clear: both;
+    height: auto;
+    max-width: 280px;
+  }
+
   .breadcrumbs {
     padding: 0;
     margin: 0 0 20px 0;
@@ -4869,6 +4955,32 @@ footer p {
     max-width: 350px;
   }
   .single-page img.aligncenter {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    clear: both;
+    height: auto;
+    max-width: 680px;
+  }
+
+  .standard-page {
+    padding: 20px 20px 0 20px;
+  }
+  .standard-page img.alignright {
+    margin-left: 1.5em;
+    display: inline;
+    float: right;
+    height: auto;
+    max-width: 350px;
+  }
+  .standard-page img.alignleft {
+    margin-right: 1.5em;
+    display: inline;
+    float: left;
+    height: auto;
+    max-width: 350px;
+  }
+  .standard-page img.aligncenter {
     margin-right: auto;
     margin-left: auto;
     display: block;
@@ -6093,6 +6205,32 @@ header .ubermenu-sticky-toggle-wrapper {
     max-width: 350px;
   }
   .single-page img.aligncenter {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    clear: both;
+    height: auto;
+    max-width: 680px;
+  }
+
+  .standard-page {
+    padding: 20px 20px 0 20px;
+  }
+  .standard-page img.alignright {
+    margin-left: 1.5em;
+    display: inline;
+    float: right;
+    height: auto;
+    max-width: 350px;
+  }
+  .standard-page img.alignleft {
+    margin-right: 1.5em;
+    display: inline;
+    float: left;
+    height: auto;
+    max-width: 350px;
+  }
+  .standard-page img.aligncenter {
     margin-right: auto;
     margin-left: auto;
     display: block;

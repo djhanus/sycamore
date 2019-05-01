@@ -1,6 +1,6 @@
 
 <?php get_header(); /* Template Name: Standard Template */ ?>
-<div class="learn single-page">
+<div class="learn standard-page">
   <div class="container">
     <?php breadcrumbs(); ?>
   </div>
