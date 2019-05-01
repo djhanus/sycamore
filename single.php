@@ -1,5 +1,5 @@
 <?php get_header();?>
-<div class="news-single single-page">
+<div class="news-single standard-page">
   <div class="container">
     <?php breadcrumbs(); ?>
   </div>
