@@ -232,14 +232,12 @@ button:hover {
   list-style: decimal;
 }
 .single-page ol li {
-  padding-bottom: 15px;
   font-family: "Source Sans Pro", sans-serif;
 }
 .single-page ul {
   list-style: none;
 }
 .single-page ul li {
-  padding-bottom: 15px;
   font-family: "Source Sans Pro", sans-serif;
 }
 .single-page img.alignright {
