@@ -32,7 +32,7 @@
     <p>Sycamore hosts outdoor events at our nature preserves across southern Indiana, and we’d love to see you. Members receive free admission; suggested donation for non-members is $5 per person or $10 per family. To become a member, click here.</p>
 
     <div class="results-wrapper">
-      <h1>2018</h1>
+      <h1></h1>
       <?php if($the_query->have_posts() ) : while ( $the_query->have_posts() ) :
         $the_query->the_post();
         $bb_event_location               = get_field('bb_event_location', false, false);
