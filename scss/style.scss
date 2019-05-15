@@ -2340,12 +2340,17 @@ ul {
     }
   }
 
+  .mini-events-link a{
+    color: black;
+  }
+
   a {
     margin: 0;
     background: transparent;
     border-width: 2px;
     color: white;
     text-align: center;
+    text-decoration: none;
 
     &:hover {
       background: transparent;

@@ -77,10 +77,10 @@
 
             <?php the_content()?>
           </div>
-
+<!-- add code here -->
           <div>
-            <a href="<?php echo $bb_event_facebook_event_url; ?>" class="btn" target="_blank">FACEBOOK EVENT</a>
-            <a href="<?php echo $bb_event_rsvp; ?>" class="btn" target="_blank">RSVP</a>
+            <?php if (get_field('bb_event_facebook_event_url')) : ?> <a href="<?php echo $bb_event_facebook_event_url; ?>" class="btn" target="_blank">FACEBOOK EVENT</a> <?php endif; ?>
+            <?php if (get_field ('bb_event_rsvp')) : ?> <a href="<?php echo $bb_event_rsvp; ?>" class="btn" target="_blank">RSVP</a> <?php endif; ?>
           </div>
         </div>
       <?php endwhile; else: ?>

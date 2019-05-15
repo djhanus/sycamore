@@ -1885,12 +1885,16 @@ ul.mini-events-cal li:last-of-type {
 .bulletin-board p strong {
   font-weight: 500;
 }
+.bulletin-board .mini-events-link a {
+  color: black;
+}
 .bulletin-board a {
   margin: 0;
   background: transparent;
   border-width: 2px;
   color: white;
   text-align: center;
+  text-decoration: none;
 }
 .bulletin-board a:hover {
   background: transparent;

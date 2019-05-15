@@ -30,7 +30,9 @@
         <span><?php echo date("M", strtotime($bb_event_date)); ?></span>
         <span><?php echo date("d", strtotime($bb_event_date)); ?></span>
       </date>
-      <?php the_title(); ?>
+      <span class="mini-events-link">
+        <a href="<?php echo get_permalink(); ?>"><?php the_title();?></a>
+      </span>
     </li>
   <?php endwhile; else: ?>
   <?php endif; wp_reset_postdata(); ?>
