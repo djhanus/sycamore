@@ -3140,6 +3140,7 @@ ul {
 
 // News Single
 .news-single {
+
   .container:not(:first-of-type) {
     width: 900px;
     margin: 0 auto;
@@ -3220,6 +3221,58 @@ ul {
       }
     }
 
+    .results-wrapper {
+      .item {
+        .events-date-time {
+          ul {
+            margin: 5px 0 20px 0;
+            list-style: none;
+          li {
+            font-family: $font-source-sans;
+                font-size: 18px;
+                line-height: 18px;
+                font-weight: 400;
+                margin: 0 0 10px 0;
+          span {
+            vertical-align: middle;
+                  width: 15px;
+                  height: 15px;
+                  margin: 0 10px 0 0;
+                  display: inline-block;
+            &.location {
+              background-image: url("data:image/svg+xml,%3Csvg width='219px' height='328px' viewBox='0 0 219 328' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cpath d='M109.28125,327.398437 C36.4973958,222.478663 0.10546875,149.920069 0.10546875,109.722656 C0.10546875,49.4265372 48.985131,0.546875 109.28125,0.546875 C169.577369,0.546875 218.457031,49.4265372 218.457031,109.722656 C218.457031,149.920069 182.065104,222.478663 109.28125,327.398437 Z M109.28125,163.972656 C136.619345,163.972656 158.78125,141.810751 158.78125,114.472656 C158.78125,87.1345611 136.619345,64.9726562 109.28125,64.9726562 C81.9431549,64.9726562 59.78125,87.1345611 59.78125,114.472656 C59.78125,141.810751 81.9431549,163.972656 109.28125,163.972656 Z' id='Combined-Shape' fill='%23405F2D' fill-rule='nonzero'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+              background-size: contain;
+              background-repeat: no-repeat;
+            }
+            &.date {
+              background-image: url("data:image/svg+xml,%3Csvg width='272px' height='272px' viewBox='0 0 272 272' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='Group' fill='%23405F2D' fill-rule='nonzero'%3E%3Ccircle id='Oval-4' cx='136.320312' cy='136.388672' r='54.5'%3E%3C/circle%3E%3Cpath d='M136.320312,271.888672 C61.4857289,271.888672 0.8203125,211.223255 0.8203125,136.388672 C0.8203125,61.5540883 61.4857289,0.888671875 136.320312,0.888671875 C211.154896,0.888671875 271.820312,61.5540883 271.820312,136.388672 C271.820312,211.223255 211.154896,271.888672 136.320312,271.888672 Z M136.320312,230.759766 C188.440028,230.759766 230.691406,188.508388 230.691406,136.388672 C230.691406,84.268956 188.440028,42.0175781 136.320312,42.0175781 C84.2005966,42.0175781 41.9492188,84.268956 41.9492188,136.388672 C41.9492188,188.508388 84.2005966,230.759766 136.320312,230.759766 Z' id='Combined-Shape'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+              background-size: contain;
+              background-repeat: no-repeat;
+            }
+          }
+          }
+          }
+        }
+      }
+    }
+
+    .event-buttons {
+      a {
+        display: block;
+        width: 225px;
+        margin: 2% auto;
+        color: white;
+        padding: auto auto;
+        text-align: center;
+
+        &:hover {
+          background: transparent;
+          border-color: $color-downy;
+          color: $color-downy;
+        }
+      }
+    }
+
     a {
       color: $color-thunder;
     }
@@ -3248,7 +3301,7 @@ ul {
       }
     }
   }
-} // END .news-single
+} // END 
 
 // Volunteer
 .volunteer {

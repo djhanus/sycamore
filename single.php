@@ -51,14 +51,14 @@
     <div class="results-wrapper">
       <div class="item">
 
-        <div>
+        <!--<div>
             <date>
               <span><?php echo date("M", strtotime($bb_event_date)); ?></span>
               <span><?php echo date("d", strtotime($bb_event_date)); ?></span>
             </date>
-        </div>
+        </div>-->
 
-        <div>
+        <div class="events-date-time">
           <?php if( get_field('bb_event_location') || get_field('bb_event_date') || get_field('bb_event_time_start') || get_field('bb_event_time_end') ): ?>
               <ul>
                 <?php if( get_field('bb_event_location') ): ?>
@@ -83,12 +83,12 @@
 
           <?php the_content(); ?>
         </div>
-          <div>
-            <?php if (get_field('bb_event_facebook_event_url')) : ?> <a href="<?php echo $bb_event_facebook_event_url; ?>" class="btn" target="_blank">FACEBOOK EVENT</a><?php endif; ?>
-            <?php if (get_field ('bb_event_rsvp')) : ?> <a href="<?php echo $bb_event_rsvp; ?>" class="btn" target="_blank">RSVP</a> <?php endif; ?>
-          </div>
       </div>
     </div>
+      <div class="event-buttons">
+            <?php if (get_field('bb_event_facebook_event_url')) : ?> <a href="<?php echo $bb_event_facebook_event_url; ?>" class="btn" target="_blank">FACEBOOK EVENT</a><?php endif; ?>
+            <?php if (get_field ('bb_event_rsvp')) : ?> <a href="<?php echo $bb_event_rsvp; ?>" class="btn" target="_blank">RSVP</a> <?php endif; ?>
+      </div>
   </div>
 
   <?php if( get_field('bb_news_gallery_images') ): ?>
