@@ -57,6 +57,11 @@
           $give_pg_button_text              = get_field('give_pg_button_text');
           $give_pg_button_url               = get_field('give_pg_button_url');
 
+          $give_ka_heading                  = get_field('give_ka_heading');
+          $give_ka_text                     = get_field('give_ka_text');
+          $give_ka_kroger_logo              = get_field('give_ka_kroger_logo');
+          $give_ka_amazon_logo              = get_field('give_ka_amazon_logo');
+
           $give_quote                       = get_field('give_quote');
           $give_quote_cite                  = get_field('give_quote_cite');
   ?>
@@ -116,6 +121,19 @@
             <a href="<?php the_sub_field('give_pl_button_url'); ?>" class="btn"><?php the_sub_field('give_pl_button_text'); ?></a>
           <?php endwhile; ?>
         <?php endif; ?>
+      </div>
+    </div>
+  </div>
+
+  <div class="row five">
+    <div class="container">
+      <div>
+        <h1><?php echo $give_ka_heading; ?></h1>
+        <?php echo $give_ka_text; ?>
+      </div>
+      <div>
+        <a href="https://www.kroger.com/signin?redirectUrl=/account/communityrewards"><img class="kroger-img" src="<?php echo get_stylesheet_directory_uri(); ?>/images/krogerlogo.png"></a>
+        <a href="https://smile.amazon.com/gp/chpf/homepage?q=sycamore+land+trust&orig=%2F&ie=UTF-8"><img class="amazon-img" src="<?php echo get_stylesheet_directory_uri(); ?>/images/amazonlogo.png"></a>
       </div>
     </div>
   </div>
@@ -194,6 +212,8 @@
       </div>
     </div>
   </div>
+
+
   <?php endwhile; ?>
 </div>
 <?php include('subscribe-divider.php'); ?>

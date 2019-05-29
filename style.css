@@ -1046,22 +1046,22 @@ ul.mini-events-cal li:last-of-type {
 .explore .one .directory-wrapper .less-notable {
   color: #5FC9A3;
 }
-.explore .one .directory-wrapper ul {
+.explore .one .directory-wrapper .main-ul {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 20px;
   line-height: 30px;
   font-weight: 300;
   margin: 0 0 40px 0;
 }
-.explore .one .directory-wrapper ul li {
+.explore .one .directory-wrapper .main-ul li {
   margin: 0 0 10px 0;
 }
-.explore .one .directory-wrapper ul li:first-of-type {
+.explore .one .directory-wrapper .main-ul li:first-of-type {
   margin: 0 0 10px 0;
   font-weight: 600;
   position: relative;
 }
-.explore .one .directory-wrapper ul li:first-of-type:after {
+.explore .one .directory-wrapper .main-ul li:first-of-type:after {
   position: absolute;
   content: "";
   bottom: 0;
@@ -1069,6 +1069,16 @@ ul.mini-events-cal li:last-of-type {
   width: 100px;
   height: 1px;
   background: #F8D048;
+}
+.explore .one .directory-wrapper .secondary-ul {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 300;
+  margin: 0 0 40px 0;
+}
+.explore .one .directory-wrapper .secondary-ul li {
+  margin: 0 0 10px 0;
 }
 .explore .two {
   padding: 60px 0;
@@ -1870,6 +1880,35 @@ ul.mini-events-cal li:last-of-type {
   font-size: 40px;
   line-height: 60px;
   font-weight: 500;
+}
+.give .five {
+  padding: 100px 0;
+  background: #eae4d2;
+}
+.give .five .container {
+  display: flex;
+}
+.give .five .container div {
+  width: 50%;
+}
+.give .five .container div:first-of-type h1,
+.give .five .container div:first-of-type p {
+  margin: 0 0 30px 50px;
+}
+.give .five .container div:first-of-type a {
+  color: black;
+}
+.give .five .container div:last-of-type {
+  margin: 0 30px 0 0;
+}
+.give .five .container div:last-of-type .kroger-img {
+  height: 240px;
+  width: 250px;
+}
+.give .five .container div:last-of-type .amazon-img {
+  height: 175px;
+  width: 175px;
+  margin: 0 0 30px 0;
 }
 
 .bulletin-board {

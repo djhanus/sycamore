@@ -11,6 +11,9 @@
         $bb_news_single_hero_text         = get_field('bb_news_single_hero_text');
 
         $bb_event_location                = get_field('bb_event_location', false, false);
+        $bb_event_external_location       = get_field('bb_event_external_location', false, false);
+        $bb_event_external_title          = get_field('bb_event_external_title');
+        $bb_event_internal_location       = get_field('bb_event_internal_location', false, false);
         $bb_event_date                    = get_field('bb_event_date');
         $bb_event_facebook_event_url      = get_field('bb_event_facebook_event_url');
         $bb_event_rsvp                    = get_field('bb_event_rsvp');
@@ -61,9 +64,13 @@
         <div class="events-date-time">
           <?php if( get_field('bb_event_location') || get_field('bb_event_date') || get_field('bb_event_time_start') || get_field('bb_event_time_end') ): ?>
               <ul>
-                <?php if( get_field('bb_event_location') ): ?>
+                <?php if( get_field('bb_event_internal_location') ): ?>
                   <li><span class="location"></span>
-                    <a href="<?php echo get_the_permalink($bb_event_location); ?>"><?php echo get_the_title($bb_event_location); ?></a>
+                    <a href="<?php echo get_the_permalink($bb_event_internal_location); ?>"><?php echo get_the_title($bb_event_internal_location); ?></a>
+                  </li>
+                <?php elseif (get_field('bb_event_external_location')): ?>
+                  <li><span class="location"></span>
+                    <a href="<?php echo get_field('bb_event_external_location'); ?>"><?php echo $bb_event_external_title; ?></a>
                   </li>
                 <?php endif; ?>
 

@@ -60,7 +60,7 @@
       <div class="directory-wrapper">
         <?php if( have_rows('explore_directory') ): ?>
           <?php while( have_rows('explore_directory') ): the_row(); ?>
-            <ul>
+            <ul class="main-ul">
               <li><?php the_sub_field('explore_directory_county_name'); ?></li>
               <?php if( have_rows('explore_directory_listings') ): ?>
                 <?php while( have_rows('explore_directory_listings') ): the_row();?>
@@ -71,14 +71,25 @@
           <?php endwhile; ?>
         <?php endif; ?>
 
-        <p><strong><span class="less-accessible">*</span> = Less accessible preserves.</strong> The less accessibility is due to limited public road access and parking, although neighbors are welcome to visit.</p>
+        <!--<p><strong><span class="less-accessible">*</span> = Less accessible preserves.</strong> The less accessibility is due to limited public road access and parking, although neighbors are welcome to visit.</p>-->
 
-        <p><strong><span class="less-notable">*</span> = Less notable preserves.</strong> These preserves are not generally accessible due to limited public road access and parking, although neighbors are welcome to visit on foot.</p>
+        <!--<p><strong><span class="less-notable">*</span> = Less notable preserves.</strong> These preserves are not generally accessible due to limited public road access and parking, although neighbors are welcome to visit on foot.</p>-->
 
         <p>Please respect Sycamore’s neighbors and do not trespass to visit a preserve.</p>
       </div>
-
       <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/wild-indiana.svg">
+    </div>
+    <div class="row one" id="directory">
+      <h1>LESS ACCESSIBLE PRESERVES DIRECTORY</h1>
+      <div  class="directory-wrapper">
+        <ul class="secondary-ul">
+        <?php if (have_rows('explore_directory_less')): ?>
+          <?php while( have_rows('explore_directory_less') ): the_row(); ?>
+              <li><a href="<?php the_sub_field('explore_directory_county_listing_url_less'); ?>"><?php the_sub_field('explore_directory_county_listing_less'); ?></a></li>
+          <?php endwhile; ?>
+        <?php endif; ?>
+        </ul>
+      </div>
     </div>
 
     <?php include('learn-indiana-divider.php');?>

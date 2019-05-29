@@ -1241,7 +1241,7 @@ ul {
         color: $color-downy;
       }
 
-      ul {
+      .main-ul {
         font-family: $font-source-sans;
         font-size: 20px;
         line-height: 30px;
@@ -1266,6 +1266,18 @@ ul {
               background: $color-bright-sun;
             }
           }
+        }
+      }
+
+      .secondary-ul {
+        font-family: $font-source-sans;
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 300;
+        margin: 0 0 40px 0;
+
+        li {
+          margin: 0 0 10px 0;
         }
       }
     }
@@ -2322,6 +2334,43 @@ ul {
       font-weight: 500;
     }
   } // .four
+
+  .five {
+    padding: 100px 0;
+    background: #eae4d2;
+
+    .container {
+      display: flex;
+
+      div {
+        width: 50%;
+
+        &:first-of-type {
+          h1,
+          p {
+            margin: 0 0 30px 50px;
+          }
+
+          a {
+            color: black;
+          }
+        }
+
+        &:last-of-type {
+          margin: 0 30px 0 0;
+          .kroger-img {
+            height: 240px;
+            width: 250px;
+          }
+          .amazon-img {
+            height: 175px;
+            width: 175px;
+            margin: 0 0 30px 0;
+          }
+        }
+      }
+    }
+  }
 } // END .give
 
 // Bulletin Board
