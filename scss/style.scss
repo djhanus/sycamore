@@ -2357,14 +2357,21 @@ ul {
         }
 
         &:last-of-type {
-          margin: 0 30px 0 0;
+          display: block;
+          position: relative;
+          width: 400px;
+          height: 175px;
+          padding: 20px;
+          margin: 0 15px;
           .kroger-img {
-            height: 240px;
-            width: 250px;
+            position: relative;
+            height: 125px;//240px
+            width: 125px;//250px
           }
           .amazon-img {
-            height: 175px;
-            width: 175px;
+            position: relative;
+            height: 175px;//175px
+            width: 175px;//175px
             margin: 0 0 30px 0;
           }
         }
