@@ -29,10 +29,10 @@ sass --watch scss: --style compressed
   - Time Start              | bb_event_time_start         | Time Picker
   - Time End                | bb_event_time_end           | Time Picker
   
-For Nature Preserve Link<br/>
-  Filter By Post Type: Preserve<br/>
-  Conditional Logic: Show this field if<br/>
-                        Location value is equal to Nature Preserve Internal Link<br/>
-For External Location Link/Title<br/>
-  Conditional Logic: Show this field if<br/>
-                        Location value is equal to External Link<br/>
+- For Nature Preserve Link
+  - Filter By Post Type: Preserve
+  - Conditional Logic: Show this field if
+    - Location value is equal to Nature Preserve Internal Link
+- For External Location Link/Title
+  - Conditional Logic: Show this field if
+    - Location value is equal to External Link
