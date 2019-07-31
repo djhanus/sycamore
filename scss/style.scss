@@ -2346,6 +2346,7 @@ ul {
         width: 50%;
 
         &:first-of-type {
+
           h1,
           p {
             margin: 0 0 30px 50px;
@@ -2359,26 +2360,27 @@ ul {
         &:last-of-type {
           display: block;
           position: relative;
-          width: 400px;
-          height: 175px;
-          padding: 20px;
+          height: 200px;
+          padding: 0 25px;
           margin: 0 15px;
+
           .kroger-img {
             position: relative;
-            height: 125px;//240px
-            width: 125px;//250px
+            height: 130px;
+            width: auto;
+            margin: 10px 25px;
           }
           .amazon-img {
             position: relative;
-            height: 175px;//175px
-            width: 175px;//175px
-            margin: 0 0 30px 0;
+            height: 130px;
+            width: auto;
+            margin: 10px 25px;
           }
         }
       }
     }
   }
-} // END .give
+}
 
 // Bulletin Board
 .bulletin-board {
@@ -5458,6 +5460,38 @@ footer {
         }
       }
     }
+
+    .five {
+      padding: 25px 0;
+      .container {
+        display: block;
+        div {
+          width: 100%;
+
+          &:first-of-type {
+            p {
+              padding: 15px;
+              margin: 0 0 15px 30px;
+            }
+          }
+
+          &:last-of-type {
+            height: 200px;
+            padding: 0 25px;
+            margin: 0 15px;
+
+            .kroger-img {
+              height: 100px;
+              margin: 10px;
+            }
+            .amazon-img {
+              height: 100px;
+              margin: 10px;
+            }
+          }
+        }
+      }
+    }
   }
 
   .bulletin-board {
@@ -7127,6 +7161,39 @@ footer {
         }
       }
     }
+
+    .five {
+      padding: 25px 0;
+      .container {
+        display: block;
+        div {
+          width: 100%;
+
+          &:first-of-type {
+            p {
+              padding: 15px;
+              margin: 0 0 15px 30px;
+            }
+          }
+
+          &:last-of-type {
+            height: auto;
+            padding: 0 25px;
+            margin: 0 15px;
+
+            .kroger-img {
+              height: 100px;
+              margin: 10px;
+            }
+            .amazon-img {
+              height: 100px;
+              margin: 10px;
+            }
+          }
+        }
+      }
+    }
+
   }
 
   .bulletin-board {
@@ -8830,6 +8897,35 @@ footer {
         p {
           font-size: 40px;
           line-height: 45px;
+        }
+      }
+    }
+
+    .five {
+      padding: 50px 0;
+      .container {
+        display: block;
+        div {
+          width: 100%;
+
+          &:first-of-type {
+          }
+
+          &:last-of-type {
+            
+            height: 200px;
+            padding: 0 25px;
+            margin: 0 15px;
+
+            .kroger-img {
+              height: 125px;
+              margin: 10px;
+            }
+            .amazon-img {
+              height: 125px;
+              margin: 10px;
+            }
+          }
         }
       }
     }
