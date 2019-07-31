@@ -1901,21 +1901,18 @@ ul.mini-events-cal li:last-of-type {
 .give .five .container div:last-of-type {
   display: block;
   position: relative;
-  width: 400px;
-  height: 175px;
-  padding: 20px;
+  width: 600px;
+  height: 200px;
   margin: 0 15px;
 }
 .give .five .container div:last-of-type .kroger-img {
-  position: relative;
   height: 125px;
   width: 125px;
 }
 .give .five .container div:last-of-type .amazon-img {
-  position: relative;
   height: 175px;
   width: 175px;
-  margin: 0 0 30px 0;
+  margin: 0 0 30px 30px;
 }
 
 .bulletin-board {
