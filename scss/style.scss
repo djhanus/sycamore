@@ -2359,17 +2359,20 @@ ul {
         &:last-of-type {
           display: block;
           position: relative;
-          width: 600px;
-          height: 200px;
+          width: 400px;
+          height: 175px;
+          padding: 20px;
           margin: 0 15px;
           .kroger-img {
+            position: relative;
             height: 125px;//240px
             width: 125px;//250px
           }
           .amazon-img {
+            position: relative;
             height: 175px;//175px
             width: 175px;//175px
-            margin: 0 0 30px 30px;
+            margin: 0 0 30px 0;
           }
         }
       }
@@ -3310,12 +3313,14 @@ ul {
     }
 
     .event-buttons {
+      margin: 25px auto 50px;
+
       a {
         display: block;
         width: 225px;
-        margin: 2% auto;
+        margin: 10px auto;
         color: white;
-        padding: auto auto;
+        padding: 10px 25px;
         text-align: center;
 
         &:hover {

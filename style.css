@@ -1901,18 +1901,21 @@ ul.mini-events-cal li:last-of-type {
 .give .five .container div:last-of-type {
   display: block;
   position: relative;
-  width: 600px;
-  height: 200px;
+  width: 400px;
+  height: 175px;
+  padding: 20px;
   margin: 0 15px;
 }
 .give .five .container div:last-of-type .kroger-img {
+  position: relative;
   height: 125px;
   width: 125px;
 }
 .give .five .container div:last-of-type .amazon-img {
+  position: relative;
   height: 175px;
   width: 175px;
-  margin: 0 0 30px 30px;
+  margin: 0 0 30px 0;
 }
 
 .bulletin-board {
@@ -2656,12 +2659,15 @@ ul.mini-events-cal li:last-of-type {
   background-size: contain;
   background-repeat: no-repeat;
 }
+.news-single .container:not(:first-of-type) .event-buttons {
+  margin: 25px auto 50px;
+}
 .news-single .container:not(:first-of-type) .event-buttons a {
   display: block;
   width: 225px;
-  margin: 2% auto;
+  margin: 10px auto;
   color: white;
-  padding: auto auto;
+  padding: 10px 25px;
   text-align: center;
 }
 .news-single .container:not(:first-of-type) .event-buttons a:hover {
