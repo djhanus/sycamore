@@ -132,8 +132,8 @@
         <?php echo $give_ka_text; ?>
       </div>
       <div>
-        <a href="https://www.kroger.com/signin?redirectUrl=/account/communityrewards"><img class="kroger-img" src="<?php echo get_stylesheet_directory_uri(); ?>/images/krogerlogo.png"></a>
-        <a href="https://smile.amazon.com/gp/chpf/homepage?q=sycamore+land+trust&orig=%2F&ie=UTF-8"><img class="amazon-img" src="<?php echo get_stylesheet_directory_uri(); ?>/images/amazonlogo.png"></a>
+        <a href="<?php echo get_field('kroger_url'); ?>" target="_blank"><img class="kroger-img" src="<?php echo get_stylesheet_directory_uri(); ?>/images/krogerlogo.png"></a>
+        <a href="<?php echo get_field('amazon_url'); ?>" target="_blank"><img class="amazon-img" src="<?php echo get_stylesheet_directory_uri(); ?>/images/amazonlogo.png"></a>
       </div>
     </div>
   </div>
