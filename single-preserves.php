@@ -29,6 +29,7 @@
     <div>
       <img src="<?php echo $explore_single_infos_featured_image; ?>">
 
+
       <div class="text">
         <?php if( have_rows('explore_single_infos') ): ?>
           <ul>
@@ -38,6 +39,7 @@
           </ul>
         <?php endif; ?>
       </div>
+      <img src="<?php echo get_field('trail_map'); ?>">
     </div>
   </div>
 
