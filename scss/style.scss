@@ -1496,15 +1496,7 @@ ul {
             li {
               list-style-position: outside;
               margin: 0 0 10px 20px;
-              padding-left: 16px;
-
-              &:first-of-type {
-                list-style: none;
-                font-weight: 400;
-                font-style: italic;
-                margin: 0 0 20px 0;
-                padding: 0;
-              }
+              padding-left: 16px; 
             }
           }
         }
