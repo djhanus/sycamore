@@ -2558,6 +2558,7 @@ ul.mini-events-cal li:last-of-type {
 
 .news-single .standard-content-wrapper ul li {
   font-weight: 300;
+  font-size: 20px;
 }
 .news-single .container:not(:first-of-type) {
   width: 900px;
