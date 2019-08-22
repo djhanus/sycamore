@@ -87,9 +87,12 @@
                 <?php endif; ?>
               </ul>
           <?php endif; ?>       
+        </div>
 
+        <div class="standard-content-wrapper">
           <?php the_content(); ?>
         </div>
+
           <div class="event-buttons">
           <?php if (get_field('bb_event_facebook_event_url')) : ?> <a href="<?php echo $bb_event_facebook_event_url; ?>" class="btn" target="_blank">FACEBOOK EVENT</a><?php endif; ?>
           <?php if (get_field ('bb_event_rsvp')) : ?> <a href="<?php echo $bb_event_rsvp; ?>" class="btn" target="_blank">RSVP</a> <?php endif; ?>
