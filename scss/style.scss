@@ -3192,6 +3192,12 @@ ul {
 .news-single {
 
   .standard-content-wrapper {
+
+    ul {
+      li {
+        font-weight: 300;
+      }
+    }
   }
 
   .container:not(:first-of-type) {

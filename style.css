@@ -2556,6 +2556,9 @@ ul.mini-events-cal li:last-of-type {
   margin: 0 5px 0 20px;
 }
 
+.news-single .standard-content-wrapper ul li {
+  font-weight: 300;
+}
 .news-single .container:not(:first-of-type) {
   width: 900px;
   margin: 0 auto;
