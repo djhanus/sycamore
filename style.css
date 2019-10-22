@@ -233,6 +233,7 @@ button:hover {
 }
 .single-page ol li {
   font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
 }
 .single-page ul {
   list-style: none;
@@ -275,8 +276,9 @@ button:hover {
   margin: 20px 20px 20px 50px;
 }
 .standard-page ol li {
-  font-size: 18px;
+  font-size: 20px;
   padding-bottom: 15px;
+  font-weight: 300;
   font-family: "Source Sans Pro", sans-serif;
 }
 .standard-page ul {
@@ -284,7 +286,7 @@ button:hover {
   margin: 20px 20px 20px 50px;
 }
 .standard-page ul li {
-  font-size: 18px;
+  font-size: 20px;
   padding-bottom: 15px;
   font-family: "Source Sans Pro", sans-serif;
 }
