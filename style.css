@@ -4951,6 +4951,7 @@ footer p {
   .news-single .container:nth-child(2) img {
     width: 100% !important;
     margin: 0 0 20px 0;
+    height: auto;
   }
 
   .donate h1 {
@@ -6221,6 +6222,7 @@ footer p {
   .news-single .container:nth-child(2) img {
     width: 100% !important;
     margin: 0 0 20px 0;
+    height: auto;
   }
 
   .donate h1 {
@@ -7493,6 +7495,7 @@ header .ubermenu-sticky-toggle-wrapper {
   .news-single .container:nth-child(2) img {
     width: 100% !important;
     margin: 0 0 20px 0;
+    height: auto;
   }
 
   .donate h1 {
