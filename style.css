@@ -393,7 +393,7 @@ ul.mini-events-cal li {
   padding: 20px 0;
 }
 ul.mini-events-cal li date {
-  display: flex;
+  display: none !important;
   flex-wrap: wrap;
   margin: 0 20px 0 0;
 }
@@ -2321,6 +2321,7 @@ ul.mini-events-cal li:last-of-type {
   width: 20%;
 }
 .events-calendar .container .results-wrapper .item div:first-of-type date {
+  display: none !important;
   text-align: center;
   width: 100px;
   margin: 0 auto;
