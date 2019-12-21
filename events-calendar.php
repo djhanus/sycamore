@@ -50,8 +50,12 @@
         <div class="item">
           <div>
             <date>
-              <span><?php echo date("M", strtotime($bb_event_date)); ?></span>
-              <span><?php echo date("d", strtotime($bb_event_date)); ?></span>
+              <span><?= date("M", strtotime($bb_event_date)); ?></span>
+              <span>
+                <?php $ogDate  = get_field('bb_event_date', false, false);
+                      $newDate = date("d", strtotime($ogDate));
+                      echo $newDate; ?>
+              </span>
             </date>
           </div>
 
