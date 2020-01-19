@@ -2896,7 +2896,7 @@ ul {
           &:first-of-type {
             width: 20%;
             date {
-              display: none !important;
+              display: flex;
               text-align: center;
               width: 100px;
               margin: 0 auto;

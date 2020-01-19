@@ -2321,7 +2321,7 @@ ul.mini-events-cal li:last-of-type {
   width: 20%;
 }
 .events-calendar .container .results-wrapper .item div:first-of-type date {
-  display: none !important;
+  display: flex;
   text-align: center;
   width: 100px;
   margin: 0 auto;
