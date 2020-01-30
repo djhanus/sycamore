@@ -464,7 +464,7 @@ ul {
       padding: 20px 0;
 
       date {
-        display: none !important;
+        display: flex;
         flex-wrap: wrap;
         margin: 0 20px 0 0;
 
@@ -829,7 +829,8 @@ ul {
 
   .one {
     padding: 100px 0;
-    background-size: cover;
+    background-size: cover !important;
+    background-position: center center !important;
 
     h1 {
       color: white;
@@ -1197,6 +1198,7 @@ ul {
       display: block;
       margin: 40px auto;
       width: 100%;
+      max-width: 760px;
     }
 
     .directory-wrapper {
@@ -4540,20 +4542,17 @@ ul {
           }
 
           ul {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            height: 450px;
+            columns: 2;
 
             li {
               position: relative;
               font-family: $font-source-sans;
               text-align: left;
               width: 50%;
-              margin: 0 0 40px 0;
+              margin: 0 0 20px 0;
               font-size: 18px;
 
-              &:after {
+              /* &:after {
                 position: absolute;
                 content: '';
                 bottom: -3px;
@@ -4561,7 +4560,7 @@ ul {
                 width: 60px;
                 height: 1px;
                 background: $color-bright-sun;
-              }
+              } */
 
               a {
                 background: transparent;

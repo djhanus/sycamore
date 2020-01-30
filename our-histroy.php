@@ -28,7 +28,6 @@
   </div>
 
   <div class="container" id="naturalhistory">
-    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/dude.jpg">
     <h1><?php echo $au_oh_lh_heading; ?></h1>
 
     <div class="text">

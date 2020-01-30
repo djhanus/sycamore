@@ -40,7 +40,7 @@
       <div class="hero-footer">
         <div class="container">
           <div class="text">
-            <h1>VISITATION RULES AND TIPS</h1>
+            <h1><?php echo get_field('rules_tips_title'); ?></h1>
 
             <?php if( have_rows('rules_tips_list') ): ?>
             <ul>
@@ -55,7 +55,7 @@
     </div>
 
     <div class="row one" id="directory">
-      <h1>DIRECTORY</h1>
+      <h1><?php echo get_field('explore_directory_title'); ?></h1>
 
       <div class="directory-wrapper">
         <?php if( have_rows('explore_directory') ): ?>
@@ -80,7 +80,7 @@
       <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/wild-indiana.svg">
     </div>
     <div class="row one" id="directory">
-      <h1>LESS ACCESSIBLE PRESERVES DIRECTORY</h1>
+      <h1><?php echo get_field('explore_directory_less_title'); ?></h1>
       <div  class="directory-wrapper">
         <ul class="secondary-ul">
         <?php if (have_rows('explore_directory_less')): ?>
@@ -95,7 +95,7 @@
     <?php include('learn-indiana-divider.php');?>
 
     <div class="row two">
-      <h1>HOW WE PROTECT LAND</h1>
+      <h1><?php echo get_field('explore_protect_land_title'); ?></h1>
       <div class="text">
         <?php echo $exploreProtectText; ?>
       </div>

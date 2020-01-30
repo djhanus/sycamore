@@ -5,7 +5,7 @@
 
     <?php while ( have_posts() ): the_post();
           $about_hero_header_text     = get_field('about_hero_header_text');
-          $about_hero_subtext         = get_field('about_hero_subtext');
+          $about_hero_subtext         = get_field('about_hero__subtext');
           $about_hero_image_url       = get_field('about_hero_image_url');
 
           $about_us_mv_heading        = get_field('about_us_mv_heading');

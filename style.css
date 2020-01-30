@@ -393,7 +393,7 @@ ul.mini-events-cal li {
   padding: 20px 0;
 }
 ul.mini-events-cal li date {
-  display: none !important;
+  display: flex;
   flex-wrap: wrap;
   margin: 0 20px 0 0;
 }
@@ -712,7 +712,8 @@ ul.mini-events-cal li:last-of-type {
 }
 .homepage .one {
   padding: 100px 0;
-  background-size: cover;
+  background-size: cover !important;
+  background-position: center center !important;
 }
 .homepage .one h1 {
   color: white;
@@ -1010,6 +1011,7 @@ ul.mini-events-cal li:last-of-type {
   display: block;
   margin: 40px auto;
   width: 100%;
+  max-width: 760px;
 }
 .explore .one .directory-wrapper {
   margin: 40px 0 0 0;
@@ -3632,27 +3634,24 @@ ul.mini-events-cal li:last-of-type {
   padding: 20px 20px 0 0;
 }
 .the-twig .container:nth-child(4) .text div ul {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  height: 450px;
+  columns: 2;
 }
 .the-twig .container:nth-child(4) .text div ul li {
   position: relative;
   font-family: "Source Sans Pro", sans-serif;
   text-align: left;
   width: 50%;
-  margin: 0 0 40px 0;
+  margin: 0 0 20px 0;
   font-size: 18px;
-}
-.the-twig .container:nth-child(4) .text div ul li:after {
-  position: absolute;
-  content: "";
-  bottom: -3px;
-  left: 0;
-  width: 60px;
-  height: 1px;
-  background: #F8D048;
+  /* &:after {
+    position: absolute;
+    content: '';
+    bottom: -3px;
+    left: 0;
+    width: 60px;
+    height: 1px;
+    background: $color-bright-sun;
+  } */
 }
 .the-twig .container:nth-child(4) .text div ul li a {
   background: transparent;
