@@ -6424,6 +6424,113 @@ footer {
   }
 }
 
+@media (min-width: 600px) and (max-width: 767px) {
+  // Carousel
+  .carousel-wrap {
+    .owl-carousel {
+      .item {
+        img {
+          min-width: 130px;
+          min-height: 130px;
+          max-width: 130px;
+          max-height: 130px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 599px) {
+  // Carousel
+  .carousel-wrap {
+    margin: 60px auto;
+    width: calc(100% - 100px);
+    position: relative;
+
+    .owl-carousel {
+      margin: 0 auto;
+      position: relative !important;
+      width: calc(100% - 40px) !important;
+
+      .item {
+        position: relative;
+        z-index: 100;
+        -webkit-backface-visibility: hidden;
+
+        img {
+          margin: 0 0 20px 0;
+          min-width: 250px;
+          min-height: 250px;
+          max-width: 250px;
+          max-height: 250px;
+          object-fit: cover;
+          overflow: hidden;
+        }
+
+        p {
+          font-size: 16px;
+          font-style: italic;
+          font-weight: 300;
+        }
+      }
+
+      .owl-nav {
+        position: absolute;
+        top: 30%;
+        left: -20px;
+        display: block !important;
+        margin: 0 auto;
+        padding: 20px 0;
+        width: calc(100% + 40px);
+
+        > div {
+          margin-top: -26px;
+          position: absolute;
+          top: 50%;
+          color: #cdcbcd;
+        }
+
+        .owl-prev,
+        .owl-next {
+          position: absolute;
+          top: 0;
+
+          span {
+            font-size: 52px;
+            display: block;
+            width: 32px;
+            height: 59px;
+
+            &.arrow-left {
+                background-image: url("data:image/svg+xml,%3Csvg width='32px' height='59px' viewBox='0 0 32 59' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cpolygon id='Path' fill='%23221F20' fill-rule='nonzero' transform='translate(15.735193, 29.111998) rotate(-180.000000) translate(-15.735193, -29.111998) ' points='0.119973652 3.49282925 2.94301463 0.659026217 31.3578505 28.9659498 2.95045345 57.5649694 0.112534829 54.7460657 25.7051378 28.9808275'%3E%3C/polygon%3E%3C/g%3E%3C/svg%3E");
+
+              &:hover {
+                background-image: url("data:image/svg+xml,%3Csvg width='32px' height='59px' viewBox='0 0 32 59' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cpolygon id='Path' fill='%23405F2D' fill-rule='nonzero' transform='translate(15.735193, 29.111998) rotate(-180.000000) translate(-15.735193, -29.111998) ' points='0.119973652 3.49282925 2.94301463 0.659026217 31.3578505 28.9659498 2.95045345 57.5649694 0.112534829 54.7460657 25.7051378 28.9808275'%3E%3C/polygon%3E%3C/g%3E%3C/svg%3E");
+              }
+            }
+
+            &.arrow-right {
+              background-image: url("data:image/svg+xml,%3Csvg width='32px' height='59px' viewBox='0 0 32 59' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cpolygon id='Path' fill='%23221F20' fill-rule='nonzero' points='0.619973652 3.49282925 3.44301463 0.659026217 31.8578505 28.9659498 3.45045345 57.5649694 0.612534829 54.7460657 26.2051378 28.9808275'%3E%3C/polygon%3E%3C/g%3E%3C/svg%3E");
+
+              &:hover {
+                background-image: url("data:image/svg+xml,%3Csvg width='32px' height='59px' viewBox='0 0 32 59' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cpolygon id='Path' fill='%23405F2D' fill-rule='nonzero' points='0.619973652 3.49282925 3.44301463 0.659026217 31.8578505 28.9659498 3.45045345 57.5649694 0.612534829 54.7460657 26.2051378 28.9808275'%3E%3C/polygon%3E%3C/g%3E%3C/svg%3E");
+              }
+            }
+          }
+        }
+
+        .owl-prev {
+          left: -30px;
+        }
+
+        .owl-next {
+          right: -30px;
+        }
+      }
+    }
+  } // END .carousel-wrap
+}
+
 @media (min-width: 481px) and (max-width: 767px) {
   .container {
     width: 100%;
@@ -8192,6 +8299,20 @@ footer {
 
   main {
     top: 0;
+  }
+
+  // Carousel
+  .carousel-wrap {
+    .owl-carousel {
+      .item {
+        img {
+          min-width: 185px;
+          min-height: 185px;
+          max-width: 185px;
+          max-height: 185px;
+        }
+      }
+    }
   }
 
   .single-page {
